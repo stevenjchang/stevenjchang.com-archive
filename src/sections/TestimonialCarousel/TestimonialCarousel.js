@@ -1,14 +1,16 @@
 import React from "react";
+import classnames from "classnames";
 
 import Carousel from "../../components/Carousel.js";
 
 const TestimonialCarousel = () => {
+  const cn = classnames("px-8 py-16 text-md");
   return (
     <>
-      <div className="section-background bg-gray-200 py-24">
-        <div className="container mx-auto bg-blue-100">
+      <div className="section-background">
+        <div className="container mx-auto">
           <Carousel>
-            <div>
+            <div className={cn}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae amet laboriosam quis non itaque perspiciatis nam
               provident velit? Voluptatum, nesciunt minima. Perferendis
@@ -16,7 +18,7 @@ const TestimonialCarousel = () => {
               placeat provident non incidunt quasi enim quia exercitationem,
               sint architecto.
             </div>
-            <div>
+            <div className={cn}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Inventore, eligendi. Debitis deserunt voluptatibus minus amet
               assumenda numquam odio inventore, atque quisquam minima
@@ -25,7 +27,7 @@ const TestimonialCarousel = () => {
               exercitationem hic fugit, rerum molestias debitis ex quasi dolore!
               Corporis ipsum similique quisquam. Numquam.
             </div>
-            <div>
+            <div className={cn}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae amet laboriosam quis non itaque perspiciatis nam
               provident velit? Voluptatum, nesciunt minima. Perferendis
