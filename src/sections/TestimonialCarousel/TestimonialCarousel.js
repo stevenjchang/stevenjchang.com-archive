@@ -4,7 +4,7 @@ import classnames from "classnames";
 import Carousel from "../../components/Carousel.js";
 
 const TestimonialCarousel = () => {
-  const cn = classnames("px-8 py-16 text-md");
+  const cn = classnames("px-12 py-16 text-md quote-mark");
   return (
     <>
       <div className="section-background">
