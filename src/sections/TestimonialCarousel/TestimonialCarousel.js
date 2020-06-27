@@ -1,7 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 
-import Carousel from "../../components/Carousel.js";
+import Carousel from "Components/Carousel.js";
 
 const TestimonialCarousel = () => {
   const cn = classnames("px-12 py-16 text-md quote-mark");

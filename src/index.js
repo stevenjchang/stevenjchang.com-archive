@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import HomePage from "./pages/HomePage";
+import HomePage from "Pages/HomePage.js";
 
 ReactDOM.render(
   <React.StrictMode>

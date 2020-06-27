@@ -1,9 +1,9 @@
 import React from "react";
 
-import TestimonialCarousel from "../sections/TestimonialCarousel/TestimonialCarousel.js";
+import TestimonialCarousel from "Sections/TestimonialCarousel/TestimonialCarousel.js";
 
-import "../styles/tailwind.css";
-import "../styles/index.css";
+import "Styles/tailwind.css";
+import "Styles/index.css";
 
 const HomePage = () => {
   return (
