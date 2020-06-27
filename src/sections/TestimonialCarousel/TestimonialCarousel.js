@@ -8,7 +8,7 @@ const TestimonialCarousel = () => {
   return (
     <>
       <div className="section-background">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <Carousel>
             <div className={cn}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

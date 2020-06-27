@@ -22,7 +22,7 @@ const CustomBuildSwiper = ({ children }) => {
     spaceBetween: 20,
     slidesPerView: 1,
     breakpoints: {
-      540: {
+      769: {
         slidesPerView: 3,
         spaceBetween: 10,
       },
