@@ -1,14 +1,13 @@
 import React from "react";
 
-import SimpleSwiper from "../../src/components/SimpleSwiper.js";
+import TestimonialCarousel from "../sections/TestimonialCarousel/TestimonialCarousel.js";
 
 import "../styles/tailwind.css";
 
 const HomePage = () => {
   return (
     <>
-      <div>Home Page</div>
-      <SimpleSwiper />
+      <TestimonialCarousel />
     </>
   );
 };

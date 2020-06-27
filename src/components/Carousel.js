@@ -4,7 +4,7 @@ import { Swiper, Navigation, Pagination } from "swiper/js/swiper.esm";
 
 import "../styles/SimpleSwiper.css";
 
-const CustomBuildSwiper = () => {
+const CustomBuildSwiper = ({ children }) => {
   const params = {
     // Provide Swiper class as props
     Swiper,
@@ -19,19 +19,17 @@ const CustomBuildSwiper = () => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    spaceBetween: 30,
-    slidesPerView: 3,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    breakpoints: {
+      540: {
+        slidesPerView: 3,
+        spaceBetween: 100,
+      },
+    },
   };
 
-  return (
-    <ReactIdSwiperCustom {...params}>
-      <div>Slide 1</div>
-      <div>Slide 2</div>
-      <div>Slide 3</div>
-      <div>Slide 4</div>
-      <div>Slide 5</div>
-    </ReactIdSwiperCustom>
-  );
+  return <ReactIdSwiperCustom {...params}>{children}</ReactIdSwiperCustom>;
 };
 
 export default CustomBuildSwiper;
