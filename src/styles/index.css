@@ -2,9 +2,8 @@
 
 @tailwind components;
 
-@tailwind utilities;
 
-/* TestimonialCarousel.js */
+/* TestimonialCarousel.js -------------------------------- */
 .quote-mark::before {
   /* content: open-quote; */
   font-family: Georgia, serif;
@@ -27,4 +26,62 @@
   font-weight: 500;
   color: #535353;
 }
+
+/* Experience.js -------------------------------- */
+.experience-section {
+  @apply px-8;
+}
+@screen lg {
+  .experience-section {
+    @apply .px-24;
+  }
+}
+.job-inner {
+  opacity: 0;
+  max-height: 0px;
+}
+.job-inner.open {
+  opacity: 1;
+  max-height: 100px;
+}
+.job-medium {
+  background: linear-gradient(to right, rgb(167, 167, 167), rgb(167, 167, 167, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.job-icon.open.icon-1 {
+  transform: rotate(90deg);
+}
+.job-icon.open.icon-2 {
+  transform: rotate(180deg);
+}
+.job-icon.open.icon-3 {
+  /* transform: rotate(180deg); */
+}
+
+.company-card {
+  text-decoration: underline;
+}
+.company-1 {
+  color: #19bf82;
+}
+.company-2 {
+  color: #ffc00e;
+}
+.company-3 {
+  color: #FFCA18;
+  text-decoration-color: black;
+}
+
+.card-container:nth-child(3n) {
+  align-items: flex-start;
+}
+.card-container:nth-child(3n - 1) {
+  align-items: center;
+}
+.card-container:nth-child(3n) {
+  align-items: flex-end;
+}
+
+@tailwind utilities;
 

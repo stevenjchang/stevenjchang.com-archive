@@ -619,6 +619,91 @@ video {
   }
 }
 
+/* TestimonialCarousel.js -------------------------------- */
+
+.quote-mark::before {
+  /* content: open-quote; */
+  font-family: Georgia, serif;
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -10px;
+  top: 15px;
+  color: #7a7a7a88;
+}
+
+.quote-mark {
+  font-family: Georgia, serif;
+  color: #7a7a7ae5;
+}
+
+.swiper-slide-next {
+  font-weight: 500;
+  color: #535353;
+}
+
+/* Experience.js -------------------------------- */
+
+.experience-section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .experience-section {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.job-inner {
+  opacity: 0;
+  max-height: 0px;
+}
+
+.job-inner.open {
+  opacity: 1;
+  max-height: 100px;
+}
+
+.job-medium {
+  background: linear-gradient(to right, rgb(167, 167, 167), rgb(167, 167, 167, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.job-icon.open.icon-1 {
+  transform: rotate(90deg);
+}
+
+.job-icon.open.icon-2 {
+  transform: rotate(180deg);
+}
+
+.job-icon.open.icon-3 {
+  /* transform: rotate(180deg); */
+}
+
+.company-card {
+  text-decoration: underline;
+}
+
+.company-1 {
+  color: #19bf82;
+}
+
+.company-2 {
+  color: #ffc00e;
+}
+
+.company-3 {
+  color: #FFCA18;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -86851,3 +86936,4 @@ video {
     transition-delay: 1000ms;
   }
 }
+
