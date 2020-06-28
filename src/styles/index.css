@@ -37,6 +37,31 @@
   opacity: 1;
   max-height: 100px;
 }
-.job-icon.open {
+.job-medium {
+  background: linear-gradient(to right, rgb(167, 167, 167), rgb(167, 167, 167, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.job-icon.open.icon-1 {
   transform: rotate(90deg);
+}
+.job-icon.open.icon-2 {
+  transform: rotate(180deg);
+}
+.job-icon.open.icon-3 {
+  /* transform: rotate(180deg); */
+}
+
+.company-card {
+  text-decoration: underline;
+}
+.company-1 {
+  color: #19bf82;
+}
+.company-2 {
+  color: #ffc00e;
+}
+.company-3 {
+  color: #FFCA18;
+  text-decoration-color: black;
 }
