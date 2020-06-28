@@ -4,7 +4,7 @@
 
 @tailwind utilities;
 
-/* TestimonialCarousel.js */
+/* TestimonialCarousel.js -------------------------------- */
 .quote-mark::before {
   /* content: open-quote; */
   font-family: Georgia, serif;
@@ -28,3 +28,15 @@
   color: #535353;
 }
 
+/* Experience.js -------------------------------- */
+.job-inner {
+  opacity: 0;
+  max-height: 0px;
+}
+.job-inner.open {
+  opacity: 1;
+  max-height: 100px;
+}
+.job-icon.open {
+  transform: rotate(90deg);
+}
