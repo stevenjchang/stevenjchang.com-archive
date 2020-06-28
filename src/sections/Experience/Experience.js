@@ -87,14 +87,18 @@ const pageData = [
 const Card = (props) => {
   const { jobTitle, company, cssClasses, paragraphs } = props;
   return (
-    <div className="my-24">
-      <h3 className="text-2xl">
-        {jobTitle} <span style={{ color: "gray" }}>@</span>{" "}
-        <a href="/">
-          <span className={cssClasses}>{company}</span>
-        </a>
-      </h3>
-      <BulletDropDowns paragraphs={paragraphs} />
+    <div className="card-container my-24 flex flex-col">
+      <div className="flex w-3/5">
+        <div className="flex flex-col">
+          <h3 className="text-2xl">
+            {jobTitle} <span style={{ color: "gray" }}>@</span>{" "}
+            <a href="/">
+              <span className={cssClasses}>{company}</span>
+            </a>
+          </h3>
+          <BulletDropDowns paragraphs={paragraphs} />
+        </div>
+      </div>
     </div>
   );
 };
@@ -113,8 +117,8 @@ const BulletDropDowns = ({ paragraphs }) => {
 };
 
 const JobBullet = ({ short, medium, long, index }) => {
-  const [isOpen, setIsOpen] = useState(index === 0 ? true : false);
-  const cn = classnames("job-upper", { open: isOpen });
+  const [isOpen, setIsOpen] = useState(false);
+  const cn = classnames("job-upper py-3 pl-4", { open: isOpen });
   const cn2 = classnames("job-inner pl-6", { open: isOpen });
   const cn3 = classnames(
     "job-icon",
@@ -124,17 +128,17 @@ const JobBullet = ({ short, medium, long, index }) => {
   return (
     <div onClick={() => setIsOpen(!isOpen)}>
       <p className={cn}>
-        <IoIosArrowDropright
+        {/* <IoIosArrowDropright
           className={cn3}
           style={{ display: "inline-block", marginRight: "8px" }}
-        />
+        /> */}
         {short} -{" "}
         <span className="job-medium">
           {medium}{" "}
-          <AiOutlineCaretDown
+          {/* <AiOutlineCaretDown
             className={cn3}
             style={{ display: "inline-block" }}
-          />{" "}
+          /> */}
         </span>
       </p>
       <p className={cn2}>{long}</p>
@@ -145,7 +149,8 @@ const JobBullet = ({ short, medium, long, index }) => {
 const Experience = () => {
   return (
     <>
-      <div className="container mx-auto my-40 px-8 lg:px-24">
+      <Test />
+      <div className="experience-section container mx-auto">
         {pageData.map((data, idx) => (
           <Card key={idx} {...data} />
         ))}
@@ -155,3 +160,58 @@ const Experience = () => {
 };
 
 export default Experience;
+
+const Test = () => {
+  return (
+    <>
+      <div className="container mx-auto flex flex-col items-start">
+        <div className="test-1 flex bg-red-500 flex w-1/2">
+          <div className="flex flex-col">
+            <h3>h3 1</h3>
+            <p>12</p>
+            <div>
+              <p>p 1 fdsfdsfsdf sd sfdsf</p>
+              <p>p 1</p>
+              <ul>
+                <li>li 1</li>
+                <li>li 1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto flex flex-col items-center">
+        <div className="test-1 flex bg-red-500 flex w-1/2">
+          <div className="flex flex-col">
+            <h3>h3 1</h3>
+            <p>12</p>
+            <div>
+              <p>p 1 fdsfdsfsdf sd sfdsf</p>
+              <p>p 1</p>
+              <ul>
+                <li>li 1</li>
+                <li>li 1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto flex flex-col items-end">
+        <div className="test-1 flex bg-red-500 flex w-1/2">
+          <div className="flex flex-col">
+            <h3>h3 1</h3>
+            <p>12</p>
+            <div>
+              <p>p 1 fdsfdsfsdf sd sfdsf</p>
+              <p>p 1</p>
+              <ul>
+                <li>li 1</li>
+                <li>li 1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
