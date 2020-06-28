@@ -149,7 +149,6 @@ const JobBullet = ({ short, medium, long, index }) => {
 const Experience = () => {
   return (
     <>
-      <Test />
       <div className="experience-section container mx-auto">
         {pageData.map((data, idx) => (
           <Card key={idx} {...data} />
@@ -160,58 +159,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
-const Test = () => {
-  return (
-    <>
-      <div className="container mx-auto flex flex-col items-start">
-        <div className="test-1 flex bg-red-500 flex w-1/2">
-          <div className="flex flex-col">
-            <h3>h3 1</h3>
-            <p>12</p>
-            <div>
-              <p>p 1 fdsfdsfsdf sd sfdsf</p>
-              <p>p 1</p>
-              <ul>
-                <li>li 1</li>
-                <li>li 1</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mx-auto flex flex-col items-center">
-        <div className="test-1 flex bg-red-500 flex w-1/2">
-          <div className="flex flex-col">
-            <h3>h3 1</h3>
-            <p>12</p>
-            <div>
-              <p>p 1 fdsfdsfsdf sd sfdsf</p>
-              <p>p 1</p>
-              <ul>
-                <li>li 1</li>
-                <li>li 1</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mx-auto flex flex-col items-end">
-        <div className="test-1 flex bg-red-500 flex w-1/2">
-          <div className="flex flex-col">
-            <h3>h3 1</h3>
-            <p>12</p>
-            <div>
-              <p>p 1 fdsfdsfsdf sd sfdsf</p>
-              <p>p 1</p>
-              <ul>
-                <li>li 1</li>
-                <li>li 1</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
