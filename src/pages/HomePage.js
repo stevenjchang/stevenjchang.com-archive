@@ -13,9 +13,8 @@ const HomePage = () => {
   return (
     <>
       <Experience />
-      <TestimonialCarousel />
       <PortfolioSection />
-      <HR />
+      <TestimonialCarousel />
       <Footer />
     </>
   );

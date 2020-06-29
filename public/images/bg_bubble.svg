@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1120px" height="750px" viewBox="0 0 1120 750" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2 + Group 2 + Phone Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1120" height="750"></rect>
+        <linearGradient x1="85.8478188%" y1="12.0305277%" x2="83.9055277%" y2="47.736301%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F5F5F5" offset="100%"></stop>
+            <stop stop-color="#F5F5F5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="11.5635889%" y1="59.8867596%" x2="74.7944795%" y2="103.379519%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F5F5F5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2-+-Group-2-+-Phone-Mask">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="Group-2" mask="url(#mask-2)">
+                <g transform="translate(-464.000000, -694.000000)" id="Gradient">
+                    <g>
+                        <rect id="Rectangle-2" x="464" y="694" width="1120" height="750"></rect>
+                        <path d="M477.940267,259.11741 L1039.70925,259.11741 C1055.96701,259.11741 1071.42226,266.182766 1082.05939,278.47774 L1900.01994,1223.92146 L1750.97902,1251.53805 L1082.08733,2042.6784 C1071.44707,2055.26331 1055.80359,2062.52248 1039.32345,2062.52248 L477.940267,2062.52248 C447.012321,2062.52248 421.940267,2037.45043 421.940267,2006.52248 L421.940267,315.11741 C421.940267,284.189464 447.012321,259.11741 477.940267,259.11741 Z" id="Path" fill="#FFFFFF" transform="translate(1160.980101, 1160.819945) rotate(-45.000000) translate(-1160.980101, -1160.819945) "></path>
+                    </g>
+                </g>
+            </g>
+            <circle id="Oval-3" fill="url(#linearGradient-3)" fill-rule="nonzero" mask="url(#mask-2)" cx="-2" cy="769" r="649"></circle>
+            <circle id="Oval-2" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-2)" cx="1104" cy="-42" r="287"></circle>
+        </g>
+    </g>
+</svg>

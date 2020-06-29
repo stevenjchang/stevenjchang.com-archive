@@ -152,7 +152,7 @@ const JobBullet = ({ short, medium, long, index }) => {
 const Experience = () => {
   return (
     <>
-      <div id="experience-section">
+      <div id="experience-section" className="section-background">
         <HeadingH2>Work Experience</HeadingH2>
         <div className="container mx-auto">
           {pageData.map((data, idx) => (

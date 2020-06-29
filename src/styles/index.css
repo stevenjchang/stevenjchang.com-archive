@@ -33,7 +33,10 @@
 
 /* Experience.js ---------------------------------------------------------------- */
 #experience-section {
-  background-image: url(/images/bg_double-bubble.png);
+  background-image: url(/images/bg_bubble.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   @apply px-8;
 }
 @screen lg {
