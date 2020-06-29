@@ -1,5 +1,7 @@
 import React from "react";
 
+import HeadingH2 from "Components/HeadingH2.js";
+
 const data = [
   {
     heading: "Get Tennis Alerts",
@@ -54,6 +56,7 @@ const PortfolioSection = () => {
   return (
     <>
       <div id="portfolio-section" className="section-background">
+        <HeadingH2>Portfolio / Projects</HeadingH2>
         <div className="container mx-auto">
           {data.map((data, idx) => (
             <Card key={idx} {...data} />

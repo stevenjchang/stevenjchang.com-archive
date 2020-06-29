@@ -3,6 +3,8 @@ import classnames from "classnames";
 
 import Carousel from "Components/Carousel.js";
 
+import HeadingH2 from "Components/HeadingH2.js";
+
 const data = [
   `Steve is a problem solver. He is the type of developer that you can rely on to fix the unknown issue. In our small front-end team, he takes more responsibilities than usual developer. He is mainly in charge of our company website and martech related projects. `,
   `You won’t find a more detail oriented full-stack software engineer than Steve. Steve and I worked together at Nima, where he lead multiple back and front-end implementations. His ability to meticulously document and think through software challenges was remarkable.`,
@@ -20,6 +22,7 @@ const TestimonialCarousel = () => {
   return (
     <>
       <div className="section-background">
+        <HeadingH2>Recommendations</HeadingH2>
         <div className="container mx-auto px-4">
           <Carousel>
             {data.map((text, idx) => (
