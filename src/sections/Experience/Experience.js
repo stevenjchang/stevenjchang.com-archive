@@ -12,21 +12,23 @@ const pageData = [
     companyUrl: "",
     paragraphs: [
       {
-        short: "short",
-        medium: "Medium ipsum dolor sit amet consectetur adipisicing elit",
+        short: "Mobile Responsive and backwards compatible",
+        medium:
+          "developed for backwards compatibility browsers and email clients",
         long:
-          "This is the long text amet consectetur adipisicing elit. Obcaecati atque architecto fugiat similique vel? Totam, optio voluptate sequi perspiciatis explicabo fugit necessitatibus natus nam!",
+          "Created mobile responsive landing pages and marketing emails that were backwards compatible with pre IE11 browsers, outlook and gmail clients (checked via BrowserStack and Litmus)",
       },
       {
-        short: "short",
-        medium: "Medium ipsum dolor sit amet consectetur adipisicing elit",
+        short: "Faster, better SEO",
+        medium: "Led redesign for improved SEO, accessibility, page speed",
         long:
-          "This is the long text amet consectetur adipisicing elit. Obcaecati atque architecto fugiat similique vel? Totam, optio voluptate sequi perspiciatis explicabo fugit necessitatibus natus nam!",
+          "Led efforts to completely redesign our website by adding in stronger SEO, accessibility, updated UI, improved page speed, built reusable sections/components and a live preview mode for our copy editor.",
       },
       {
-        short: "short",
-        medium: "medium",
-        long: "long",
+        short: "Test and Error Logs",
+        medium: "Added e2e testing, error logging, and form submission",
+        long:
+          "Added e2e testing, error logging, and form submission error handler to improve site reliability.",
       },
     ],
   },
@@ -38,21 +40,24 @@ const pageData = [
     companyUrl: "",
     paragraphs: [
       {
-        short: "short",
-        medium: "Medium ipsum dolor sit amet consectetur adipisicing elit",
+        short: "Design API",
+        medium:
+          "Architected a rewards system engine that automatically updates customer",
         long:
-          "This is the long text amet consectetur adipisicing elit. Obcaecati atque architecto fugiat similique vel? Totam, optio voluptate sequi perspiciatis explicabo fugit necessitatibus natus nam!",
+          "Architected a rewards system engine that automatically updates customer points based on database stream functions when users perform specific actions.",
       },
       {
-        short: "short",
-        medium: "Medium ipsum dolor sit amet consectetur adipisicing elit",
+        short: "Ad Tech integration",
+        medium:
+          "Integrated marketing and analytics tools for seamless communication across",
         long:
-          "This is the long text amet consectetur adipisicing elit. Obcaecati atque architecto fugiat similique vel? Totam, optio voluptate sequi perspiciatis explicabo fugit necessitatibus natus nam!",
+          "Integrated marketing and analytics tools for seamless communication across different platforms like Segment.io, Google Analytics, Facebook Pixel, Iterable, Criteo, AdRoll, Talkable and others.",
       },
       {
-        short: "short",
-        medium: "medium",
-        long: "long",
+        short: "Integrate payment/checkout",
+        medium: "Added pay with Paypal and Affirm options to the checkout page",
+        long:
+          "Added pay with Paypal and Affirm options to the checkout page, improving customer experience.",
       },
     ],
   },
@@ -64,21 +69,17 @@ const pageData = [
     companyUrl: "",
     paragraphs: [
       {
-        short: "short",
-        medium: "Medium ipsum dolor sit amet consectetur adipisicing elit",
+        short: "Converting prject",
+        medium: "converted a Ruby on Rails tempting codebase into AngularJS.",
         long:
-          "This is the long text amet consectetur adipisicing elit. Obcaecati atque architecto fugiat similique vel? Totam, optio voluptate sequi perspiciatis explicabo fugit necessitatibus natus nam!",
+          "Partnered with leadership to work on a dashboard for scientific researchers, converting a Ruby on Rails tempting codebase into AngularJS.",
       },
       {
-        short: "short",
-        medium: "Medium ipsum dolor sit amet consectetur adipisicing elit",
+        short: "Completed work on time",
+        medium:
+          "Completed the task within the time frame of the 6 month contract period.",
         long:
-          "This is the long text amet consectetur adipisicing elit. Obcaecati atque architecto fugiat similique vel? Totam, optio voluptate sequi perspiciatis explicabo fugit necessitatibus natus nam!",
-      },
-      {
-        short: "short",
-        medium: "medium",
-        long: "long",
+          "Completed the task within the time frame of the 6 month contract period.",
       },
     ],
   },
