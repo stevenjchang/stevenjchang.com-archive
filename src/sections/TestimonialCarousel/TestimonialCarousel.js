@@ -23,7 +23,7 @@ const TestimonialCarousel = () => {
         <div className="container mx-auto px-4">
           <Carousel>
             {data.map((text, idx) => (
-              <div className={cn}>
+              <div key={idx} className={cn}>
                 <a href="https://linkedin.com/in/stevenjchang">{text}</a>
               </div>
             ))}
