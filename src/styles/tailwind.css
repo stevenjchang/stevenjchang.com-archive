@@ -619,7 +619,7 @@ video {
   }
 }
 
-/* TestimonialCarousel.js -------------------------------- */
+/* TestimonialCarousel.js ---------------------------------------------------------------- */
 
 .quote-mark::before {
   /* content: open-quote; */
@@ -644,7 +644,7 @@ video {
   color: #535353;
 }
 
-/* Experience.js -------------------------------- */
+/* Experience.js ---------------------------------------------------------------- */
 
 .experience-section {
   padding-left: 2rem;
@@ -702,6 +702,33 @@ video {
   color: #FFCA18;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
+}
+
+.card-container:nth-child(3n) {
+  align-items: flex-start;
+}
+
+.card-container:nth-child(3n - 1) {
+  align-items: center;
+}
+
+.card-container:nth-child(3n) {
+  align-items: flex-end;
+}
+
+/* PortfolioSection.js ---------------------------------------------------------------- */
+
+#portfolio-section .card-container {
+  /* height: 400px;  */
+  margin: 4rem;
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #a0aec0;
+  border-color: rgba(160, 174, 192, var(--border-opacity));
+}
+
+#portfolio-section .card-container:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
