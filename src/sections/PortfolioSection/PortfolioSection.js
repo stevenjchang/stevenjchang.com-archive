@@ -30,11 +30,12 @@ const data = [
 const Card = ({ heading, description, imgUrl }) => {
   return (
     <div className="card-container max-w-full flex">
-      <div className="w-1/2 text-center">
-        <h3>{heading}</h3>
-        <h4>{description}</h4>
+      <div className="w-1/2 p-16">
+        <h3 className="text-2xl text-gray-600">{heading}</h3>
+        <br />
+        <p className="text-gray-700 font-light">{description}</p>
       </div>
-      <div className="c w-1/2 max-w-auto h-full border-l border-gray-300">
+      <div className="image-container w-1/2 max-w-auto h-full border-gray-300">
         <img className="" src={imgUrl} alt="" />
       </div>
     </div>

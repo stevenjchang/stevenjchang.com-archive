@@ -149,7 +149,7 @@ const JobBullet = ({ short, medium, long, index }) => {
 const Experience = () => {
   return (
     <>
-      <div className="experience-section container mx-auto">
+      <div id="experience-section" className="container mx-auto">
         {pageData.map((data, idx) => (
           <Card key={idx} {...data} />
         ))}

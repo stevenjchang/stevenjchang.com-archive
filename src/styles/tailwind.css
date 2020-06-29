@@ -646,13 +646,13 @@ video {
 
 /* Experience.js ---------------------------------------------------------------- */
 
-.experience-section {
+#experience-section {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 @media (min-width: 1024px) {
-  .experience-section {
+  #experience-section {
     padding-left: 6rem;
     padding-right: 6rem;
   }
@@ -704,31 +704,36 @@ video {
           text-decoration-color: black;
 }
 
-.card-container:nth-child(3n) {
+#experience-section .card-container:nth-child(3n) {
   align-items: flex-start;
 }
 
-.card-container:nth-child(3n - 1) {
+#experience-section .card-container:nth-child(3n - 1) {
   align-items: center;
 }
 
-.card-container:nth-child(3n) {
+#experience-section .card-container:nth-child(3n) {
   align-items: flex-end;
 }
 
 /* PortfolioSection.js ---------------------------------------------------------------- */
 
 #portfolio-section .card-container {
-  /* height: 400px;  */
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
   margin: 4rem;
-  border-width: 2px;
-  --border-opacity: 1;
-  border-color: #a0aec0;
-  border-color: rgba(160, 174, 192, var(--border-opacity));
 }
 
 #portfolio-section .card-container:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+#portfolio-section .card-container:nth-child(odd) .image-container {
+  border-left: 1px solid #eaeaea;
+}
+
+#portfolio-section .card-container:nth-child(even) .image-container {
+  border-right: 1px solid #eaeaea;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
