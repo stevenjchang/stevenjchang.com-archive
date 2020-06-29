@@ -728,12 +728,16 @@ video {
   flex-direction: row-reverse;
 }
 
-#portfolio-section .card-container:nth-child(odd) .image-container {
+/* #portfolio-section .card-container:nth-child(odd) .image-container {
   border-left: 1px solid #eaeaea;
-}
+} */
 
-#portfolio-section .card-container:nth-child(even) .image-container {
+/* #portfolio-section .card-container:nth-child(even) .image-container {
   border-right: 1px solid #eaeaea;
+} */
+
+#portfolio-section .card-container .image-container {
+  border: 5px solid blue;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
