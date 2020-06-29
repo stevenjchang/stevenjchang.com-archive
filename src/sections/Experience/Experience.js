@@ -3,6 +3,8 @@ import { IoIosArrowDropright } from "react-icons/io";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import classnames from "classnames";
 
+import HeadingH2 from "Components/HeadingH2.js";
+
 const pageData = [
   {
     jobTitle: "Frontend Engineer",
@@ -151,6 +153,7 @@ const Experience = () => {
   return (
     <>
       <div id="experience-section" className="container mx-auto">
+        <HeadingH2>Work Experience</HeadingH2>
         {pageData.map((data, idx) => (
           <Card key={idx} {...data} />
         ))}
