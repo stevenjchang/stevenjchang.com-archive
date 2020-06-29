@@ -152,11 +152,13 @@ const JobBullet = ({ short, medium, long, index }) => {
 const Experience = () => {
   return (
     <>
-      <div id="experience-section" className="container mx-auto">
+      <div id="experience-section">
         <HeadingH2>Work Experience</HeadingH2>
-        {pageData.map((data, idx) => (
-          <Card key={idx} {...data} />
-        ))}
+        <div className="container mx-auto">
+          {pageData.map((data, idx) => (
+            <Card key={idx} {...data} />
+          ))}
+        </div>
       </div>
     </>
   );
