@@ -11,9 +11,15 @@ const Footer = () => {
     <>
       <div className="section-background pb-24">
         <div className="container mx-auto flex justify-around w-40">
-          <FaLinkedin {...iconConfig} />
-          <FaGithub {...iconConfig} />
-          <FaTwitter {...iconConfig} />
+          <a href="https://bit.ly/stevenjchang-linkedin">
+            <FaLinkedin {...iconConfig} />
+          </a>
+          <a href="https://bit.ly/stevenjchang-github">
+            <FaGithub {...iconConfig} />
+          </a>
+          <a href="https://bit.ly/stevenjchang-twitter">
+            <FaTwitter {...iconConfig} />
+          </a>
         </div>
       </div>
     </>
