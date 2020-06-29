@@ -21,7 +21,7 @@ const TestimonialCarousel = () => {
 
   return (
     <>
-      <div className="section-background">
+      <div id="testimonial-section" className="section-background">
         <HeadingH2>Recommendations</HeadingH2>
         <div className="container mx-auto px-4">
           <Carousel>

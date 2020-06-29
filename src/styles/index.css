@@ -2,6 +2,10 @@
 
 @tailwind components;
 
+.section-background {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 
 /* TestimonialCarousel.js ---------------------------------------------------------------- */
 .quote-mark::before {
@@ -29,6 +33,7 @@
 
 /* Experience.js ---------------------------------------------------------------- */
 #experience-section {
+  background-image: url(/images/bg_double-bubble.png);
   @apply px-8;
 }
 @screen lg {
@@ -102,6 +107,13 @@
 #portfolio-section .card-container .image-container {
   border: 5px solid #2b6cb0;
 }
+
+
+/* TestimonialCarousel.js ---------------------------------------------------------------- */
+#testimonial-section {
+  background-color: #f9f9f9;
+}
+
 
 @tailwind utilities;
 
