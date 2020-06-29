@@ -93,11 +93,14 @@
 #portfolio-section .card-container:nth-child(even) {
   flex-direction: row-reverse;
 }
-#portfolio-section .card-container:nth-child(odd) .image-container {
+/* #portfolio-section .card-container:nth-child(odd) .image-container {
   border-left: 1px solid #eaeaea;
-}
-#portfolio-section .card-container:nth-child(even) .image-container {
+} */
+/* #portfolio-section .card-container:nth-child(even) .image-container {
   border-right: 1px solid #eaeaea;
+} */
+#portfolio-section .card-container .image-container {
+  border: 5px solid #2b6cb0;
 }
 
 @tailwind utilities;

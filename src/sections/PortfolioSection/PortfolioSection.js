@@ -43,7 +43,7 @@ const Card = ({ heading, description, imgUrl, url }) => {
         <br />
         <p className="text-gray-700 font-light">{description}</p>
       </div>
-      <div className="image-container w-1/2 max-w-auto h-full border-gray-300">
+      <div className="image-container w-1/2 max-w-auto h-full">
         <a href={url}>
           <img className="" src={imgUrl} alt="" />
         </a>
