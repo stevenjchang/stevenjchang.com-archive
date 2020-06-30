@@ -90,10 +90,10 @@ const pageData = [
 const Card = (props) => {
   const { jobTitle, company, cssClasses, paragraphs } = props;
   return (
-    <div className="card-container my-24 flex flex-col">
+    <div className="card-container my-10 lg:my-24 flex flex-col">
       <div className="flex w-full lg:w-3/5">
         <div className="flex flex-col">
-          <h3 className="text-2xl">
+          <h3 className="text-xl lg:text-2xl">
             {jobTitle} <span style={{ color: "gray" }}>@</span>{" "}
             <a href="/">
               <span className={cssClasses}>{company}</span>

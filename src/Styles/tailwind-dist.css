@@ -632,8 +632,15 @@ video {
 /* ****************   SHARED   **************** */
 
 .section-background {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .section-background {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 @media (max-width: 1280px) {

@@ -9,7 +9,7 @@ const iconConfig = {
 const FooterSection = () => {
   return (
     <>
-      <div className="section-background pb-24">
+      <div className="section-background py-24">
         <div className="container mx-auto flex justify-around w-40">
           <a href="https://bit.ly/stevenjchang-linkedin">
             <FaLinkedin {...iconConfig} />

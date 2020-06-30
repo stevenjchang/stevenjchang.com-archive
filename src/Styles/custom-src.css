@@ -10,9 +10,16 @@
 
 /* ****************   SHARED   **************** */
 .section-background {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+@screen lg {
+  .section-background {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
 @media (max-width: 1280px) {
   .hide-on-mobile {
     display: none !important;

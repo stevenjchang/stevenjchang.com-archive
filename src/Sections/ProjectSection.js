@@ -77,6 +77,7 @@ const PortfolioSection = () => {
     <>
       <div id="portfolio-section" className="section-background">
         <HeadingH2>Portfolio / Projects</HeadingH2>
+        <br />
         <div className="container mx-auto">
           {data.map((data, idx) => (
             <Card key={idx} {...data} />

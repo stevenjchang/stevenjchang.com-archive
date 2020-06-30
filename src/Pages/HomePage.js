@@ -17,6 +17,7 @@ const HomePage = () => {
       <WorkExperienceSection />
       <TestimonialSection />
       <ProjectSection />
+      <HR />
       <FooterSection />
     </>
   );
