@@ -91,7 +91,7 @@ const Card = (props) => {
   const { jobTitle, company, cssClasses, paragraphs } = props;
   return (
     <div className="card-container my-24 flex flex-col">
-      <div className="flex w-3/5">
+      <div className="flex w-full lg:w-3/5">
         <div className="flex flex-col">
           <h3 className="text-2xl">
             {jobTitle} <span style={{ color: "gray" }}>@</span>{" "}
@@ -113,41 +113,44 @@ const BulletDropDowns = ({ paragraphs }) => {
   return (
     <>
       {paragraphs.map((data, idx) => (
-        <JobBullet key={idx} index={idx} {...data} />
+        <JobBulletNonResponsive key={idx} index={idx} {...data} />
       ))}
     </>
   );
 };
 
-const JobBullet = ({ short, medium, long, index }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const cn = classnames("job-upper py-3 pl-4", { open: isOpen });
-  const cn2 = classnames("job-inner pl-6", { open: isOpen });
-  const cn3 = classnames(
-    "job-icon",
-    { open: isOpen },
-    { [`icon-${index + 1}`]: true }
-  );
+const JobBulletNonResponsive = ({ short, medium, long, index }) => {
   return (
-    <div onClick={() => setIsOpen(!isOpen)}>
-      <p className={cn}>
-        {/* <IoIosArrowDropright
-          className={cn3}
-          style={{ display: "inline-block", marginRight: "8px" }}
-        /> */}
-        {short} -{" "}
-        <span className="job-medium">
-          {medium}{" "}
-          {/* <AiOutlineCaretDown
-            className={cn3}
-            style={{ display: "inline-block" }}
-          /> */}
-        </span>
+    <div>
+      <p className="py-2 lg:pl-4">
+        {`${short} - `}{" "}
+        <span className="text-gray-600 text-xs">{`${long}`}</span>{" "}
       </p>
-      <p className={cn2}>{long}</p>
     </div>
   );
 };
+
+// const JobBullet = ({ short, medium, long, index }) => {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const cn = classnames("job-upper py-3 pl-4", { open: isOpen });
+//   const cn2 = classnames("job-inner pl-6", { open: isOpen });
+//   const cn3 = classnames(
+//     "job-icon",
+//     { open: isOpen },
+//     { [`icon-${index + 1}`]: true }
+//   );
+//   return (
+//     <div onClick={() => setIsOpen(!isOpen)}>
+//       <p className={cn}>
+//         {short} -{" "}
+//         <span className="job-medium">
+//           {medium}{" "}
+//         </span>
+//       </p>
+//       <p className={cn2}>{long}</p>
+//     </div>
+//   );
+// };
 
 const WorkExperienceSection = () => {
   return (

@@ -785,16 +785,18 @@ video {
           text-decoration-color: black;
 }
 
-#experience-section .card-container:nth-child(3n) {
-  align-items: flex-start;
-}
+@media (min-width: 1024px) {
+  #experience-section .card-container:nth-child(3n) {
+    align-items: flex-start;
+  }
 
-#experience-section .card-container:nth-child(3n - 1) {
-  align-items: center;
-}
+  #experience-section .card-container:nth-child(3n - 1) {
+    align-items: center;
+  }
 
-#experience-section .card-container:nth-child(3n) {
-  align-items: flex-end;
+  #experience-section .card-container:nth-child(3n) {
+    align-items: flex-end;
+  }
 }
 
 /* HeroSection.js ---------------------------------------------------------------- */
