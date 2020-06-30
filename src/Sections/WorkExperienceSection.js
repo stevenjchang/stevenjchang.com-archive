@@ -130,28 +130,6 @@ const JobBulletNonResponsive = ({ short, medium, long, index }) => {
   );
 };
 
-// const JobBullet = ({ short, medium, long, index }) => {
-//   const [isOpen, setIsOpen] = useState(false);
-//   const cn = classnames("job-upper py-3 pl-4", { open: isOpen });
-//   const cn2 = classnames("job-inner pl-6", { open: isOpen });
-//   const cn3 = classnames(
-//     "job-icon",
-//     { open: isOpen },
-//     { [`icon-${index + 1}`]: true }
-//   );
-//   return (
-//     <div onClick={() => setIsOpen(!isOpen)}>
-//       <p className={cn}>
-//         {short} -{" "}
-//         <span className="job-medium">
-//           {medium}{" "}
-//         </span>
-//       </p>
-//       <p className={cn2}>{long}</p>
-//     </div>
-//   );
-// };
-
 const WorkExperienceSection = () => {
   return (
     <>
