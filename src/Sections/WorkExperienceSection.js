@@ -11,7 +11,7 @@ const pageData = [
     company: "Skupos",
     cssClasses: "company-card company-1",
     companyColor: "#19bf82",
-    companyUrl: "",
+    companyUrl: "https://skupos.com",
     paragraphs: [
       {
         short: "Mobile Responsive and backwards compatible",
@@ -39,7 +39,7 @@ const pageData = [
     company: "nimasensor",
     cssClasses: "company-card company-2",
     companyColor: "#ffc00e",
-    companyUrl: "",
+    companyUrl: "https://nimasensor.com",
     paragraphs: [
       {
         short: "Design API",
@@ -68,7 +68,7 @@ const pageData = [
     company: "Zymergen",
     cssClasses: "company-card company-3",
     companyColor: "#FFCA18",
-    companyUrl: "",
+    companyUrl: "https://zymergen.com",
     paragraphs: [
       {
         short: "Converting prject",
@@ -88,14 +88,14 @@ const pageData = [
 ];
 
 const Card = (props) => {
-  const { jobTitle, company, cssClasses, paragraphs } = props;
+  const { jobTitle, company, cssClasses, paragraphs, companyUrl } = props;
   return (
     <div className="card-container my-10 lg:my-24 flex flex-col">
       <div className="flex w-full lg:w-3/5">
         <div className="flex flex-col">
           <h3 className="text-xl lg:text-2xl">
             {jobTitle} <span style={{ color: "gray" }}>@</span>{" "}
-            <a href="/">
+            <a href={companyUrl}>
               <span className={cssClasses}>{company}</span>
             </a>
           </h3>
