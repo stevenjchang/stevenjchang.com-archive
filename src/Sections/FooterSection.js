@@ -6,7 +6,7 @@ const iconConfig = {
   color: "#A9A9A9",
 };
 
-const Footer = () => {
+const FooterSection = () => {
   return (
     <>
       <div className="section-background pb-24">
@@ -26,4 +26,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterSection;
