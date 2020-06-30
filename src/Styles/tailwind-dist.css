@@ -619,15 +619,87 @@ video {
   }
 }
 
+/** List of Sections **/
+
+/**   Hero **/
+
+/**   Project **/
+
+/**   Testimonial **/
+
+/**   Work Experience **/
+
+/* ****************   SHARED   **************** */
+
 .section-background {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
-/* TestimonialCarousel.js ---------------------------------------------------------------- */
+/* ****************   HERO SECTION   **************** */
+
+#hero-section {
+  height: 90vh;
+}
+
+#hero-section h1 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  line-height: 1;
+}
+
+#hero-section h2 {
+  letter-spacing: 0.25rem;
+}
+
+#hero-section .cta-dark {
+  background-color: #ed4933;
+  letter-spacing: .225em;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+#hero-section .cta-dark-2 {
+  background-color: #ed4933;
+}
+
+/* ****************   PROJECT SECTION   **************** */
+
+#portfolio-section .card-container {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  margin: 4rem;
+}
+
+#portfolio-section .card-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* #portfolio-section .card-container:nth-child(odd) .image-container {
+  border-left: 1px solid #eaeaea;
+} */
+
+/* #portfolio-section .card-container:nth-child(even) .image-container {
+  border-right: 1px solid #eaeaea;
+} */
+
+#portfolio-section .card-container .image-container {
+  border: 5px solid #2b6cb0;
+}
+
+/* ****************   TESTIMONIAL SECTION   **************** */
+
+#testimonial-section {
+  background-color: #f9f9f9;
+}
 
 .quote-mark::before {
-  /* content: open-quote; */
   font-family: Georgia, serif;
   display: block;
   padding-left: 10px;
@@ -649,7 +721,7 @@ video {
   color: #535353;
 }
 
-/* Experience.js ---------------------------------------------------------------- */
+/* ****************   WORK EXPERIENCE SECTION   **************** */
 
 #experience-section {
   background-image: url(/images/bg_bubble.svg);
@@ -725,68 +797,7 @@ video {
   align-items: flex-end;
 }
 
-/* PortfolioSection.js ---------------------------------------------------------------- */
-
-#portfolio-section .card-container {
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-  margin: 4rem;
-}
-
-#portfolio-section .card-container:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-/* #portfolio-section .card-container:nth-child(odd) .image-container {
-  border-left: 1px solid #eaeaea;
-} */
-
-/* #portfolio-section .card-container:nth-child(even) .image-container {
-  border-right: 1px solid #eaeaea;
-} */
-
-#portfolio-section .card-container .image-container {
-  border: 5px solid #2b6cb0;
-}
-
-/* TestimonialCarousel.js ---------------------------------------------------------------- */
-
-#testimonial-section {
-  background-color: #f9f9f9;
-}
-
 /* HeroSection.js ---------------------------------------------------------------- */
-
-#hero-section {
-  height: 90vh;
-}
-
-#hero-section h1 {
-  font-family: "Open Sans", Helvetica, sans-serif;
-  line-height: 1;
-}
-
-#hero-section h2 {
-  letter-spacing: 0.25rem;
-}
-
-#hero-section .cta-dark {
-  background-color: #ed4933;
-  letter-spacing: .225em;
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-#hero-section .cta-dark-2 {
-  background-color: #ed4933;
-}
 
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
