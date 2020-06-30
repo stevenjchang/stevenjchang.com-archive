@@ -118,5 +118,29 @@
 }
 
 
+/* HeroSection.js ---------------------------------------------------------------- */
+#hero-section {
+  height: 90vh;
+}
+
+#hero-section h1 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  line-height: 1;
+}
+#hero-section h2 {
+  letter-spacing: 0.25rem;
+}
+#hero-section .cta-dark {
+  background-color: #ed4933;
+  letter-spacing: .225em;
+  @apply text-white text-xs font-semibold;
+  @apply px-8 py-3;
+}
+#hero-section .cta-dark-2 {
+  background-color: #ed4933;
+}
+
+
+
 @tailwind utilities;
 

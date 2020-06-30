@@ -619,6 +619,11 @@ video {
   }
 }
 
+.section-background {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 /* TestimonialCarousel.js ---------------------------------------------------------------- */
 
 .quote-mark::before {
@@ -647,6 +652,10 @@ video {
 /* Experience.js ---------------------------------------------------------------- */
 
 #experience-section {
+  background-image: url(/images/bg_bubble.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -737,7 +746,46 @@ video {
 } */
 
 #portfolio-section .card-container .image-container {
-  border: 5px solid blue;
+  border: 5px solid #2b6cb0;
+}
+
+/* TestimonialCarousel.js ---------------------------------------------------------------- */
+
+#testimonial-section {
+  background-color: #f9f9f9;
+}
+
+/* HeroSection.js ---------------------------------------------------------------- */
+
+#hero-section {
+  height: 90vh;
+}
+
+#hero-section h1 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  line-height: 1;
+}
+
+#hero-section h2 {
+  letter-spacing: 0.25rem;
+}
+
+#hero-section .cta-dark {
+  background-color: #ed4933;
+  letter-spacing: .225em;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+#hero-section .cta-dark-2 {
+  background-color: #ed4933;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
