@@ -3,7 +3,7 @@ import React from "react";
 import HeroSection from "Sections/HeroSection.js";
 import WorkExperienceSection from "Sections/WorkExperienceSection.js";
 import TestimonialSection from "Sections/TestimonialSection.js";
-import PortfolioSection from "Sections/PortfolioSection.js";
+import ProjectSection from "Sections/ProjectSection.js";
 import FooterSection from "Sections/FooterSection.js";
 import HR from "Components/HR.js";
 
@@ -15,7 +15,7 @@ const HomePage = () => {
       <HeroSection />
       <HR />
       <WorkExperienceSection />
-      <PortfolioSection />
+      <ProjectSection />
       <TestimonialSection />
       <FooterSection />
     </>
