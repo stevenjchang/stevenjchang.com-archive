@@ -20,7 +20,7 @@
   "scripts": {
     "start": "yarn run build:style && react-scripts start",
     "build": "react-scripts build",
-    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "build:style": "tailwind build src/styles/custom-src.css -o src/styles/tailwind-dist.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

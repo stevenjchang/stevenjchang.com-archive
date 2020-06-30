@@ -7,8 +7,7 @@ import PortfolioSection from "Sections/PortfolioSection.js";
 import FooterSection from "Sections/FooterSection.js";
 import HR from "Components/HR.js";
 
-import "Styles/tailwind.css";
-import "Styles/index.css";
+import "Styles/tailwind-dist.css";
 
 const HomePage = () => {
   return (
