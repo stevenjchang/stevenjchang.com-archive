@@ -16,7 +16,7 @@ const data = [
   `Working with Steve at Zymergen has been a great privilege. On top of being quick learner and effective engineer. Steve is able to smile and maintain a cheerful demeanor even when working under stress; he brings palpable positive energy to the team's he works with.`,
 ];
 
-const TestimonialCarousel = () => {
+const TestimonialSection = () => {
   const cn = classnames("px-12 py-16 text-md quote-mark");
 
   return (
@@ -37,4 +37,4 @@ const TestimonialCarousel = () => {
   );
 };
 
-export default TestimonialCarousel;
+export default TestimonialSection;
