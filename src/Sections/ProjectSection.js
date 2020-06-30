@@ -37,7 +37,7 @@ const DesktopCard = ({ heading, description, imgUrl, url }) => {
   return (
     <>
       <div className="card-container max-w-full flex">
-        <div className="w-1/2 p-16">
+        <div className="w-1/2 flex flex-col justify-center px-12">
           <a href={url}>
             <h3 className="text-2xl text-gray-600">{heading}</h3>
           </a>
@@ -46,7 +46,7 @@ const DesktopCard = ({ heading, description, imgUrl, url }) => {
         </div>
         <div className="image-container w-1/2 max-w-auto h-full">
           <a href={url}>
-            <img className="" src={imgUrl} alt="" />
+            <img className="cover" src={imgUrl} alt="" />
           </a>
         </div>
       </div>

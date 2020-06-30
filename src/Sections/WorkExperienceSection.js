@@ -71,7 +71,7 @@ const pageData = [
     companyUrl: "https://zymergen.com",
     paragraphs: [
       {
-        short: "Converting prject",
+        short: "Rebuilding application",
         medium: "converted a Ruby on Rails tempting codebase into AngularJS.",
         long:
           "Partnered with leadership to work on a dashboard for scientific researchers, converting a Ruby on Rails tempting codebase into AngularJS.",

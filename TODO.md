@@ -1,3 +1,16 @@
-- [ ] rename files
-- [ ] make mobile responsive
-- [ ]
+- [x] rename files
+- [x] make mobile responsive
+- [ ] write intro section after hero
+- [ ] list technologies
+- [ ] add years to work experience
+- [ ] add technologies to work experience
+- [ ] figure out expand functionality for work experience
+- [ ] animation for cta button
+- [ ] animation for other stuff
+- [ ] banner for top? - for freelance offer
+- [ ] page - about page
+- [ ] page - freelance offer
+- [ ] projects - have a details page for each project
+
+- [ ] build some more projects
+- [ ] build podcast project next
