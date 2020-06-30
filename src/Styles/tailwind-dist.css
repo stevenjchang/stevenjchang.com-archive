@@ -632,8 +632,27 @@ video {
 /* ****************   SHARED   **************** */
 
 .section-background {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .section-background {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
 }
 
 /* ****************   HERO SECTION   **************** */
@@ -696,7 +715,7 @@ video {
 /* ****************   TESTIMONIAL SECTION   **************** */
 
 #testimonial-section {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
 }
 
 .quote-mark::before {
@@ -785,16 +804,18 @@ video {
           text-decoration-color: black;
 }
 
-#experience-section .card-container:nth-child(3n) {
-  align-items: flex-start;
-}
+@media (min-width: 1024px) {
+  #experience-section .card-container:nth-child(3n) {
+    align-items: flex-start;
+  }
 
-#experience-section .card-container:nth-child(3n - 1) {
-  align-items: center;
-}
+  #experience-section .card-container:nth-child(3n - 1) {
+    align-items: center;
+  }
 
-#experience-section .card-container:nth-child(3n) {
-  align-items: flex-end;
+  #experience-section .card-container:nth-child(3n) {
+    align-items: flex-end;
+  }
 }
 
 /* HeroSection.js ---------------------------------------------------------------- */

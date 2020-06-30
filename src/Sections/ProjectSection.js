@@ -35,20 +35,40 @@ const data = [
 
 const Card = ({ heading, description, imgUrl, url }) => {
   return (
-    <div className="card-container max-w-full flex">
-      <div className="w-1/2 p-16">
-        <a href={url}>
-          <h3 className="text-2xl text-gray-600">{heading}</h3>
-        </a>
-        <br />
-        <p className="text-gray-700 font-light">{description}</p>
+    <>
+      <div className="card-container max-w-full flex hide-on-mobile">
+        <div className="w-1/2 p-16">
+          <a href={url}>
+            <h3 className="text-2xl text-gray-600">{heading}</h3>
+          </a>
+          <br />
+          <p className="text-gray-700 font-light">{description}</p>
+        </div>
+        <div className="image-container w-1/2 max-w-auto h-full">
+          <a href={url}>
+            <img className="" src={imgUrl} alt="" />
+          </a>
+        </div>
       </div>
-      <div className="image-container w-1/2 max-w-auto h-full">
-        <a href={url}>
-          <img className="" src={imgUrl} alt="" />
-        </a>
+
+      <div className="card-container-mobile max-w-full flex flex-col hide-on-desktop px-8 py-4">
+        <div className="max-w-auto border-4 border-blue-400">
+          <a href={url}>
+            <img className="" src={imgUrl} alt="" />
+          </a>
+        </div>
+        <div className="my-4">
+          <a href={url}>
+            <h3 className="text-lg text-gray-600 text-center mb-2">
+              {heading}
+            </h3>
+          </a>
+          <p className="text-gray-700 font-light text-center text-xs">
+            {description}
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -57,6 +77,7 @@ const PortfolioSection = () => {
     <>
       <div id="portfolio-section" className="section-background">
         <HeadingH2>Portfolio / Projects</HeadingH2>
+        <br />
         <div className="container mx-auto">
           {data.map((data, idx) => (
             <Card key={idx} {...data} />

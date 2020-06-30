@@ -15,8 +15,9 @@ const HomePage = () => {
       <HeroSection />
       <HR />
       <WorkExperienceSection />
-      <ProjectSection />
       <TestimonialSection />
+      <ProjectSection />
+      <HR />
       <FooterSection />
     </>
   );

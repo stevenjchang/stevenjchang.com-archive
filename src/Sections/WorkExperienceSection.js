@@ -11,7 +11,7 @@ const pageData = [
     company: "Skupos",
     cssClasses: "company-card company-1",
     companyColor: "#19bf82",
-    companyUrl: "",
+    companyUrl: "https://skupos.com",
     paragraphs: [
       {
         short: "Mobile Responsive and backwards compatible",
@@ -39,7 +39,7 @@ const pageData = [
     company: "nimasensor",
     cssClasses: "company-card company-2",
     companyColor: "#ffc00e",
-    companyUrl: "",
+    companyUrl: "https://nimasensor.com",
     paragraphs: [
       {
         short: "Design API",
@@ -68,7 +68,7 @@ const pageData = [
     company: "Zymergen",
     cssClasses: "company-card company-3",
     companyColor: "#FFCA18",
-    companyUrl: "",
+    companyUrl: "https://zymergen.com",
     paragraphs: [
       {
         short: "Converting prject",
@@ -88,14 +88,14 @@ const pageData = [
 ];
 
 const Card = (props) => {
-  const { jobTitle, company, cssClasses, paragraphs } = props;
+  const { jobTitle, company, cssClasses, paragraphs, companyUrl } = props;
   return (
-    <div className="card-container my-24 flex flex-col">
-      <div className="flex w-3/5">
+    <div className="card-container my-10 lg:my-24 flex flex-col">
+      <div className="flex w-full lg:w-3/5">
         <div className="flex flex-col">
-          <h3 className="text-2xl">
+          <h3 className="text-xl lg:text-2xl">
             {jobTitle} <span style={{ color: "gray" }}>@</span>{" "}
-            <a href="/">
+            <a href={companyUrl}>
               <span className={cssClasses}>{company}</span>
             </a>
           </h3>
@@ -113,38 +113,19 @@ const BulletDropDowns = ({ paragraphs }) => {
   return (
     <>
       {paragraphs.map((data, idx) => (
-        <JobBullet key={idx} index={idx} {...data} />
+        <JobBulletNonResponsive key={idx} index={idx} {...data} />
       ))}
     </>
   );
 };
 
-const JobBullet = ({ short, medium, long, index }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const cn = classnames("job-upper py-3 pl-4", { open: isOpen });
-  const cn2 = classnames("job-inner pl-6", { open: isOpen });
-  const cn3 = classnames(
-    "job-icon",
-    { open: isOpen },
-    { [`icon-${index + 1}`]: true }
-  );
+const JobBulletNonResponsive = ({ short, medium, long, index }) => {
   return (
-    <div onClick={() => setIsOpen(!isOpen)}>
-      <p className={cn}>
-        {/* <IoIosArrowDropright
-          className={cn3}
-          style={{ display: "inline-block", marginRight: "8px" }}
-        /> */}
-        {short} -{" "}
-        <span className="job-medium">
-          {medium}{" "}
-          {/* <AiOutlineCaretDown
-            className={cn3}
-            style={{ display: "inline-block" }}
-          /> */}
-        </span>
+    <div>
+      <p className="py-2 lg:pl-4">
+        {`${short} - `}{" "}
+        <span className="text-gray-600 text-xs">{`${long}`}</span>{" "}
       </p>
-      <p className={cn2}>{long}</p>
     </div>
   );
 };
