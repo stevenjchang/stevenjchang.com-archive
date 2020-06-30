@@ -33,10 +33,10 @@ const data = [
   },
 ];
 
-const Card = ({ heading, description, imgUrl, url }) => {
+const DesktopCard = ({ heading, description, imgUrl, url }) => {
   return (
     <>
-      <div className="card-container max-w-full flex hide-on-mobile">
+      <div className="card-container max-w-full flex">
         <div className="w-1/2 p-16">
           <a href={url}>
             <h3 className="text-2xl text-gray-600">{heading}</h3>
@@ -50,37 +50,51 @@ const Card = ({ heading, description, imgUrl, url }) => {
           </a>
         </div>
       </div>
-
-      <div className="card-container-mobile max-w-full flex flex-col hide-on-desktop px-8 py-4">
-        <div className="max-w-auto border-4 border-blue-400">
-          <a href={url}>
-            <img className="" src={imgUrl} alt="" />
-          </a>
-        </div>
-        <div className="my-4">
-          <a href={url}>
-            <h3 className="text-lg text-gray-600 text-center mb-2">
-              {heading}
-            </h3>
-          </a>
-          <p className="text-gray-700 font-light text-center text-xs">
-            {description}
-          </p>
-        </div>
-      </div>
     </>
+  );
+};
+
+const MobileCard = ({ heading, description, imgUrl, url }) => {
+  return (
+    <div className="card-container-mobile max-w-full flex flex-col hide-on-desktop px-8 py-4">
+      <div className="max-w-auto border-4 border-blue-400">
+        <a href={url}>
+          <img className="" src={imgUrl} alt="" />
+        </a>
+      </div>
+      <div className="my-4">
+        <a href={url}>
+          <h3 className="text-lg text-gray-600 text-center mb-2">{heading}</h3>
+        </a>
+        <p className="text-gray-700 font-light text-center text-xs">
+          {description}
+        </p>
+      </div>
+    </div>
   );
 };
 
 const PortfolioSection = () => {
   return (
     <>
-      <div id="portfolio-section" className="section-background">
-        <HeadingH2>Portfolio / Projects</HeadingH2>
+      <div id="portfolio-section" className="section-background hide-on-mobile">
+        <HeadingH2>Projects</HeadingH2>
         <br />
         <div className="container mx-auto">
           {data.map((data, idx) => (
-            <Card key={idx} {...data} />
+            <DesktopCard key={idx} {...data} />
+          ))}
+        </div>
+      </div>
+      <div
+        id="portfolio-section"
+        className="section-background hide-on-desktop"
+      >
+        <HeadingH2>Projects</HeadingH2>
+        <br />
+        <div className="container mx-auto">
+          {data.map((data, idx) => (
+            <MobileCard key={idx} {...data} />
           ))}
         </div>
       </div>
