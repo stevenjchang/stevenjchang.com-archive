@@ -1,6 +1,6 @@
 import React from "react";
 
-import HeroSection from "Sections/HeroSection/HeroSection.js";
+import HeroSection from "Sections/HeroSection.js";
 import Experience from "Sections/Experience/Experience.js";
 import TestimonialCarousel from "Sections/TestimonialCarousel/TestimonialCarousel.js";
 import PortfolioSection from "Sections/PortfolioSection/PortfolioSection.js";
