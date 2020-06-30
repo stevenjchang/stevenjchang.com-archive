@@ -149,7 +149,7 @@ const JobBullet = ({ short, medium, long, index }) => {
   );
 };
 
-const Experience = () => {
+const WorkExperienceSection = () => {
   return (
     <>
       <div id="experience-section" className="section-background">
@@ -164,4 +164,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default WorkExperienceSection;
