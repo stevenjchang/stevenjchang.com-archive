@@ -1,1 +1,3 @@
 - [ ] rename files
+- [ ] make mobile responsive
+- [ ]

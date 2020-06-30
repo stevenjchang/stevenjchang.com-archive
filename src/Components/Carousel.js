@@ -2,7 +2,7 @@ import React from "react";
 import ReactIdSwiperCustom from "react-id-swiper/lib/ReactIdSwiper.custom";
 import { Swiper, Navigation, Pagination } from "swiper/js/swiper.esm";
 
-import "Styles/Carousel.css";
+import "Components/Carousel.css";
 
 const CustomBuildSwiper = ({ children }) => {
   const params = {

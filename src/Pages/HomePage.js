@@ -1,24 +1,23 @@
 import React from "react";
 
-import HeroSection from "Sections/HeroSection/HeroSection.js";
-import Experience from "Sections/Experience/Experience.js";
-import TestimonialCarousel from "Sections/TestimonialCarousel/TestimonialCarousel.js";
-import PortfolioSection from "Sections/PortfolioSection/PortfolioSection.js";
-import Footer from "Sections/Footer/Footer.js";
+import HeroSection from "Sections/HeroSection.js";
+import WorkExperienceSection from "Sections/WorkExperienceSection.js";
+import TestimonialSection from "Sections/TestimonialSection.js";
+import ProjectSection from "Sections/ProjectSection.js";
+import FooterSection from "Sections/FooterSection.js";
 import HR from "Components/HR.js";
 
-import "Styles/tailwind.css";
-import "Styles/index.css";
+import "Styles/tailwind-dist.css";
 
 const HomePage = () => {
   return (
     <>
       <HeroSection />
       <HR />
-      <Experience />
-      <PortfolioSection />
-      <TestimonialCarousel />
-      <Footer />
+      <WorkExperienceSection />
+      <ProjectSection />
+      <TestimonialSection />
+      <FooterSection />
     </>
   );
 };
