@@ -14,3 +14,9 @@
 
 - [ ] build some more projects
 - [ ] build podcast project next
+
+- [ ] customize the README per project
+- [ ] make a main README for my entire github
+
+
+- [ ] add testing
