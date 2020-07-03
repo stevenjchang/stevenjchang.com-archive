@@ -2,37 +2,6 @@ import React from "react";
 
 import HeadingH2 from "Components/HeadingH2.js";
 
-const data = [
-  {
-    heading: "Get Tennis Alerts",
-    description:
-      "Never miss another international tennis match. Follow your favorite players and get alerts when tournament matches are announced.",
-    imgUrl: "/images/portfolio_gettennisalerts.png",
-    url: "https://gettennisalerts.com",
-  },
-  {
-    heading: "React / Redux Boilerplate",
-    description:
-      "My simplified boilerplate with customized webpack settings with devServer and proxy. A minimal full-stack javascript boilerplate, with as little configurations as possible. Using React, Node/Express, PostgreSQL, Knex, and Redux",
-    imgUrl: "/images/portfolio_boilerplate.png",
-    url: "https://github.com/stevenjchang/steves_boilerplate",
-  },
-  {
-    heading: "Craigslist Search Aggregator",
-    description:
-      "The all in one search aggregator tool for Craigslist. View multiple search results at once, across different keywords and locations.",
-    imgUrl: "/images/portfolio_craigslist.png",
-    url: "https://github.com/HashtagCoding/craigslistSearchAggregator",
-  },
-  {
-    heading: "SF Crime Data",
-    description:
-      "Reported Crime in SF, in map view. It performs a radial search of variable size around an address provided by the user, and then offers the datapoints (crimes, in this case) for download.",
-    imgUrl: "/images/portfolio_sf_crimedata.png",
-    url: "https://sfcrimedata.org/",
-  },
-];
-
 const DesktopCard = ({ heading, description, imgUrl, url }) => {
   return (
     <>
@@ -103,3 +72,40 @@ const PortfolioSection = () => {
 };
 
 export default PortfolioSection;
+
+const data = [
+  {
+    heading: "gettennisalerts.com",
+    description:
+      "Never miss another international tennis match. Follow your favorite players and get alerts when tournament matches are announced.",
+    imgUrl: "/images/portfolio_gettennisalerts.png",
+    url: "https://gettennisalerts.com",
+  },
+  {
+    heading: "podcastcrush.com",
+    description: `Discover podcasts you'll love`,
+    imgUrl: "/images/portfolio_podcast.png",
+    url: "https://podcastcrush.com",
+  },
+  {
+    heading: "React / Redux Boilerplate",
+    description:
+      "My simplified boilerplate with customized webpack settings with devServer and proxy. A minimal full-stack javascript boilerplate, with as little configurations as possible. Using React, Node/Express, PostgreSQL, Knex, and Redux",
+    imgUrl: "/images/portfolio_boilerplate.png",
+    url: "https://github.com/stevenjchang/steves_boilerplate",
+  },
+  {
+    heading: "Craigslist Search Aggregator",
+    description:
+      "The all in one search aggregator tool for Craigslist. View multiple search results at once, across different keywords and locations.",
+    imgUrl: "/images/portfolio_craigslist.png",
+    url: "https://github.com/HashtagCoding/craigslistSearchAggregator",
+  },
+  {
+    heading: "SF Crime Data",
+    description:
+      "Reported Crime in SF, in map view. It performs a radial search of variable size around an address provided by the user, and then offers the datapoints (crimes, in this case) for download.",
+    imgUrl: "/images/portfolio_sf_crimedata.png",
+    url: "https://sfcrimedata.org/",
+  },
+];
