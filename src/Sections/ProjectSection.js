@@ -75,17 +75,17 @@ export default PortfolioSection;
 
 const data = [
   {
+    heading: "podcastcrush.com",
+    description: `Discover the podcast you'll love`,
+    imgUrl: "/images/portfolio_podcast.png",
+    url: "https://podcastcrush.com",
+  },
+  {
     heading: "gettennisalerts.com",
     description:
       "Never miss another international tennis match. Follow your favorite players and get alerts when tournament matches are announced.",
     imgUrl: "/images/portfolio_gettennisalerts.png",
     url: "https://gettennisalerts.com",
-  },
-  {
-    heading: "podcastcrush.com",
-    description: `Discover podcasts you'll love`,
-    imgUrl: "/images/portfolio_podcast.png",
-    url: "https://podcastcrush.com",
   },
   {
     heading: "React / Redux Boilerplate",
