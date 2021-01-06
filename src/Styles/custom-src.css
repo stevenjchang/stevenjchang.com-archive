@@ -1,0 +1,199 @@
+@tailwind base;
+
+@tailwind components;
+
+/** List of Sections **/
+/**   Hero **/
+/**   Project **/
+/**   Testimonial **/
+/**   Work Experience **/
+
+/* ****************   SHARED   **************** */
+.section-background {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@screen lg {
+  .section-background {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 1024px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/* ****************   HERO SECTION   **************** */
+#hero-section {
+  height: 90vh;
+}
+#hero-section h1 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  line-height: 1;
+}
+#hero-section h2 {
+  letter-spacing: 0.25rem;
+}
+#hero-section .cta-dark {
+  background-color: #ed4933;
+  letter-spacing: 0.225em;
+  @apply text-white text-xs font-semibold;
+  @apply px-8 py-3;
+}
+#hero-section .cta-dark-2 {
+  background-color: #ed4933;
+}
+
+/* ****************   SERVICE SECTION   **************** */
+.service-section-card {
+  max-width: 900px;
+}
+
+/* ****************   PROJECT SECTION   **************** */
+#portfolio-section .card-container {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  @apply m-16;
+}
+#portfolio-section .card-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* #portfolio-section .card-container:nth-child(odd) .image-container {
+  border-left: 1px solid #eaeaea;
+} */
+/* #portfolio-section .card-container:nth-child(even) .image-container {
+  border-right: 1px solid #eaeaea;
+} */
+#portfolio-section .card-container .image-container {
+  border: 5px solid #2b6cb0;
+}
+
+/* ****************   TESTIMONIAL SECTION   **************** */
+#testimonial-section {
+  background-color: #f6f6f6;
+}
+.quote-mark::before {
+  font-family: Georgia, serif;
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -10px;
+  top: 15px;
+  color: #7a7a7a88;
+}
+.quote-mark {
+  font-family: Georgia, serif;
+  color: #7a7a7ae5;
+}
+.swiper-slide-next {
+  font-weight: 500;
+  color: #535353;
+}
+
+/* ****************   WORK EXPERIENCE SECTION   **************** */
+#experience-section {
+  background-image: url(/images/bg_bubble.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @apply px-8;
+}
+@screen lg {
+  #experience-section {
+    @apply .px-24;
+  }
+}
+.job-inner {
+  opacity: 0;
+  max-height: 0px;
+}
+.job-inner.open {
+  opacity: 1;
+  max-height: 100px;
+}
+.job-medium {
+  background: linear-gradient(
+    to right,
+    rgb(167, 167, 167),
+    rgb(167, 167, 167, 0)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.job-icon.open.icon-1 {
+  transform: rotate(90deg);
+}
+.job-icon.open.icon-2 {
+  transform: rotate(180deg);
+}
+.job-icon.open.icon-3 {
+  /* transform: rotate(180deg); */
+}
+
+.company-card {
+  text-decoration: underline;
+}
+.company-1 {
+  color: #19bf82;
+}
+.company-2 {
+  color: #ffc00e;
+}
+.company-3 {
+  color: #ffca18;
+  text-decoration-color: black;
+}
+
+@screen lg {
+  #experience-section .card-container:nth-child(3n) {
+    align-items: flex-start;
+  }
+  #experience-section .card-container:nth-child(3n - 1) {
+    align-items: center;
+  }
+  #experience-section .card-container:nth-child(3n) {
+    align-items: flex-end;
+  }
+}
+
+#hero-section {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#dcd9d9 2px, transparent 2px),
+    radial-gradient(#dcd9d9 2px, #ffffff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.css-navbar {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30; */
+  /* box-shadow: 0px 2px 5px rgb(73, 73, 73); */
+  /* background: linear-gradient(108deg, rgba(54,159,124,1) 0%, rgba(34,195,142,0.9037990196078431) 68%); */
+}
+.css-text-off-black {
+  color: #1a222b;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* HeroSection.js ---------------------------------------------------------------- */
+
+@tailwind utilities;
