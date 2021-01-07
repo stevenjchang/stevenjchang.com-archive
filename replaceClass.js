@@ -2,6 +2,7 @@
 const fs = require("fs");
 const aR = require("app-root-path");
 const [, , ...args] = process.argv;
+
 const flattenedFiles = (d, f_) => {
   const f = fs.readdirSync(d);
   for (const i in f) {
@@ -10,7 +11,9 @@ const flattenedFiles = (d, f_) => {
   }
   return f_;
 };
+
 const files = flattenedFiles(`${aR}/${args.length > 0 ? args : "src"}`, []);
+
 files
   .filter((f) => f.split(".").pop() === "js")
   .map((f) =>
@@ -23,5 +26,3 @@ files
       }
     })
   );
-
-console.log("hello ==>");
