@@ -1,5 +1,5 @@
 #service-section {
-  height: 100vh;
+  height: 65vh;
   max-width: 1000px;
   margin: 0 auto;
   // display: flex;
@@ -35,4 +35,102 @@
       color: purple;
     }
   }
+}
+
+// TABS USING CSS
+/* Tabs Name Container */
+.tabs-container {
+  position: relative;
+  background: #2652cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 320px;
+  // height: 100vh;
+  height: 100%;
+  float: left;
+  z-index: 20;
+}
+/* Tabs Names Label */
+.tabs-container label {
+  position: relative;
+  padding: 10px;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hover effect on tabs names */
+.tabs-container label:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Content area for tabs */
+.tab-content {
+  position: relative;
+  background-image: linear-gradient(135deg, #fff6b7 10%, #f6416c 100%);
+  background-size: cover;
+  width: calc(100% - 320px);
+  // min-height: 100vh;
+  height: 65vh;
+  float: left;
+  box-sizing: border-box;
+  z-index: 19;
+  display: none;
+}
+
+.tab-content-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-content:after {
+  content: "";
+  clear: both;
+}
+
+/* Hide input radio from users */
+input[name="tab"] {
+  display: none;
+}
+/* Show tab when input checked */
+input[name="tab"]:checked + .tab-content {
+  display: block;
+  animation: slide 1s forwards;
+}
+
+/* Slide animation for tab contents */
+@keyframes slide {
+  from {
+    left: -30%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+// ------------ my own adjustments
+
+.tab-label {
+  height: 100px;
+  text-align: center;
+  margin-bottom: 0;
+
+  padding: 0;
+  height: 100%;
+}
+
+.tab-label-text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
