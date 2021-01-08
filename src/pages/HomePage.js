@@ -1,24 +1,33 @@
 import "pages/HomePage.scss";
+import { ServiceSection } from "sections/ServiceSection";
 
 // export function HomePage() {
 //   return <div className="">homepage</div>;
 // }
 
-export function HomePage({ element }) {
+export function HomePage() {
   return (
     <>
       {/* <div ref={element}> */}
-      <section className="welcome">
+      {/* <section className="welcome">
         <img src="" alt="logo" className="welcome--logo" />
         <p>Even if you scroll, i will stick with you</p>
         <button className="welcome__cta-primary">Contact us</button>
-      </section>
+      </section> */}
 
       {/* </div> */}
-      <About />
-      <About />
+      <HeroSection />
+      <ServiceSection />
       <About />
     </>
+  );
+}
+
+function HeroSection() {
+  return (
+    <section id="hero-section" className="section">
+      <h1 className="">Software Developer | Marketing Consultant</h1>
+    </section>
   );
 }
 
