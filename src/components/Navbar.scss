@@ -14,7 +14,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 1px 1px 1px #222;
+  box-shadow: 1px 0px 1px #222;
   animation: moveDown 0.5s ease-in-out;
 }
 
@@ -42,6 +42,12 @@
   cursor: pointer;
 
   color: rgb(99, 97, 97);
+}
+
+.navbar {
+  h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 }
 
 @keyframes moveDown {

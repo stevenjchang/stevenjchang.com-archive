@@ -23,10 +23,21 @@ export function HomePage() {
   );
 }
 
+const text = {
+  description: `Based out of SF. Experience working with early stage startups and small businesses. Specialize in integrating marketing tools.`,
+};
+
 function HeroSection() {
   return (
     <section id="hero-section" className="section">
-      <h1 className="">Software Developer | Marketing Consultant</h1>
+      <h1 className="">Software Engineer | Marketing Consultant</h1>
+      <br />
+      <p className="">{text.description}</p>
+      <br />
+      <div className="">
+        <button className="btn">I need a freelancer</button>
+        <button className="btn">I'm looking to hire</button>
+      </div>
     </section>
   );
 }
