@@ -7,11 +7,14 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "app-root-path": "^3.0.0",
+    "classnames": "^2.2.6",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-id-swiper": "^4.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "swiper": "^5.4.5",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

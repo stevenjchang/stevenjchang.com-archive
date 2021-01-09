@@ -1,5 +1,6 @@
 import "pages/HomePage.scss";
 import { ServiceSection } from "sections/ServiceSection";
+import { TestimonialSection } from "sections/TestimonialSection";
 
 // export function HomePage() {
 //   return <div className="">homepage</div>;
@@ -17,6 +18,7 @@ export function HomePage() {
 
       {/* </div> */}
       <HeroSection />
+      <TestimonialSection />
       <ServiceSection />
       <About />
     </>
