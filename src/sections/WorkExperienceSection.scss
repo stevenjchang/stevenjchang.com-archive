@@ -1,0 +1,92 @@
+#experience-section {
+  background-image: url(../images/bg_bubble.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @apply px-8;
+}
+@screen lg {
+  #experience-section {
+    @apply .px-24;
+  }
+}
+.job-inner {
+  opacity: 0;
+  max-height: 0px;
+}
+.job-inner.open {
+  opacity: 1;
+  max-height: 100px;
+}
+.job-medium {
+  background: linear-gradient(
+    to right,
+    rgb(167, 167, 167),
+    rgba(167, 167, 167, 0)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.job-icon.open.icon-1 {
+  transform: rotate(90deg);
+}
+.job-icon.open.icon-2 {
+  transform: rotate(180deg);
+}
+.job-icon.open.icon-3 {
+  /* transform: rotate(180deg); */
+}
+
+.company-card {
+  text-decoration: underline;
+}
+.company-1 {
+  color: #19bf82;
+}
+.company-2 {
+  color: #ffc00e;
+}
+.company-3 {
+  color: #ffca18;
+  text-decoration-color: black;
+}
+
+@screen lg {
+  #experience-section .card-container:nth-child(3n) {
+    align-items: flex-start;
+  }
+  #experience-section .card-container:nth-child(3n - 1) {
+    align-items: center;
+  }
+  #experience-section .card-container:nth-child(3n) {
+    align-items: flex-end;
+  }
+}
+
+#hero-section {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#dcd9d9 2px, transparent 2px),
+    radial-gradient(#dcd9d9 2px, #ffffff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.css-navbar {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30; */
+  /* box-shadow: 0px 2px 5px rgb(73, 73, 73); */
+  /* background: linear-gradient(108deg, rgba(54,159,124,1) 0%, rgba(34,195,142,0.9037990196078431) 68%); */
+}
+.css-text-off-black {
+  color: #1a222b;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
