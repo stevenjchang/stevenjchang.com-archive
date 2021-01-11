@@ -38,8 +38,8 @@ function HeroSection() {
       <p className="">{text.description}</p>
       <br />
       <div className="">
+        <button className="btn btn-warning">I'm looking to hire</button>
         <button className="btn">I need a freelancer</button>
-        <button className="btn">I'm looking to hire</button>
       </div>
     </section>
   );
