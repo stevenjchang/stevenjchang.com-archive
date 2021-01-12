@@ -18,7 +18,10 @@ const shortData = [
 const TestimonialSection = () => {
   return (
     <>
-      <div id="testimonial-section" className="section-background">
+      <div
+        id="testimonial-section"
+        className="section-background section-outer"
+      >
         <HeadingH2>Recommendations</HeadingH2>
         <div className="container mx-auto px-4">
           <Carousel>

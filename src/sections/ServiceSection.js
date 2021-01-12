@@ -2,7 +2,7 @@ import "sections/ServiceSection.scss";
 
 export function ServiceSection() {
   return (
-    <section id="service-section" className="section">
+    <section id="service-section" className="section section-outer">
       <div className="inner-container">
         {/* <div className="left"> */}
         <div class="left tabs-container">

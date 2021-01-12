@@ -2,6 +2,21 @@ import React from "react";
 
 import "sections/WorkExperienceSection.scss";
 
+export const WorkExperienceSection = () => {
+  return (
+    <>
+      <div id="experience-section" className="section-background section-outer">
+        <HeadingH2>Work Experience</HeadingH2>
+        <div className="container mx-auto">
+          {pageData.map((data, idx) => (
+            <Card key={idx} {...data} />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
 const Card = (props) => {
   const { jobTitle, company, cssClasses, paragraphs, companyUrl } = props;
   return (
@@ -38,33 +53,16 @@ const JobBulletNonResponsive = ({ short, medium, long, index }) => {
   return (
     <div>
       <p className="py-2 lg:pl-4">
-        {`${short} - `}{" "}
-        <span className="text-gray-600 text-xs">{`${long}`}</span>{" "}
+        <span className="font-bold">{`${short} - `} </span>
+        <span className="font-small">{`${long}`}</span>{" "}
       </p>
     </div>
-  );
-};
-
-const WorkExperienceSection = () => {
-  return (
-    <>
-      <div id="experience-section" className="section-background">
-        <HeadingH2>Work Experience</HeadingH2>
-        <div className="container mx-auto">
-          {pageData.map((data, idx) => (
-            <Card key={idx} {...data} />
-          ))}
-        </div>
-      </div>
-    </>
   );
 };
 
 const HeadingH2 = ({ children }) => {
   return <h2 className="text-center text-2xl font-bold">{children}</h2>;
 };
-
-export default WorkExperienceSection;
 
 const pageData = [
   {
