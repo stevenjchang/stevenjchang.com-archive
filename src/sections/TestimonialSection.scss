@@ -1,5 +1,9 @@
 #testimonial-section {
   background-color: #f6f6f6;
+
+  .container {
+    display: flex;
+  }
 }
 .quote-mark::before {
   font-family: Georgia, serif;
@@ -33,4 +37,8 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+}
+
+.testimony--text {
+  padding: 5rem 4rem;
 }

@@ -3,7 +3,10 @@
 }
 
 .section-outer {
-  padding: 12rem 0;
+  padding: 4rem 0;
+  @media only screen and (min-width: 768px) {
+    padding: 12rem 0;
+  }
 }
 
 .section-inner {

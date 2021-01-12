@@ -26,7 +26,10 @@ const TestimonialSection = () => {
         <div className="container mx-auto px-4">
           <Carousel>
             {shortData.map((text, idx) => (
-              <div key={idx} className="px-12 py-16 text-md quote-mark">
+              <div
+                key={idx}
+                className="testimony--text px-12 py-16 text-md quote-mark"
+              >
                 <a href="https://linkedin.com/in/stevenjchang">{text}</a>
               </div>
             ))}

@@ -8,7 +8,7 @@ export function HomePage() {
   return (
     <>
       <HeroSection />
-      <ServiceSection />
+      {/* <ServiceSection /> */}
       <WorkExperienceSection />
       <TestimonialSection />
     </>
