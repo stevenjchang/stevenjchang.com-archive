@@ -4,12 +4,46 @@
   background-size: cover;
   background-position: center center;
 
+  .card-container {
+    margin-bottom: 2rem;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 3rem;
+    }
+  }
+
   .font-bold {
     font-weight: 600;
-    // font-size: 14px;
+    font-size: 14px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
   .font-small {
-    font-size: 14px;
+    font-size: 11px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    font-size: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  .bullet {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media screen and (min-width: 768px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
   }
 }
 

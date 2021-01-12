@@ -6,7 +6,7 @@ export const WorkExperienceSection = () => {
   return (
     <>
       <div id="experience-section" className="section-background section-outer">
-        <HeadingH2>Work Experience</HeadingH2>
+        <h2>Work Experience</h2>
         <div className="container mx-auto">
           {pageData.map((data, idx) => (
             <Card key={idx} {...data} />
@@ -23,7 +23,7 @@ const Card = (props) => {
     <div className="card-container my-10 lg:my-24 flex flex-col">
       <div className="flex w-full lg:w-3/5">
         <div className="flex flex-col">
-          <h3 className="text-xl lg:text-2xl">
+          <h3 className="">
             {jobTitle} <span style={{ color: "gray" }}>@</span>{" "}
             <a href={companyUrl}>
               <span className={cssClasses}>{company}</span>
@@ -51,17 +51,11 @@ const BulletDropDowns = ({ paragraphs }) => {
 
 const JobBulletNonResponsive = ({ short, medium, long, index }) => {
   return (
-    <div>
-      <p className="py-2 lg:pl-4">
-        <span className="font-bold">{`${short} - `} </span>
-        <span className="font-small">{`${long}`}</span>{" "}
-      </p>
-    </div>
+    <p className="bullet">
+      <span className="font-bold">{`${short} - `} </span>
+      <span className="font-small">{`${long}`}</span>{" "}
+    </p>
   );
-};
-
-const HeadingH2 = ({ children }) => {
-  return <h2 className="text-center text-2xl font-bold">{children}</h2>;
 };
 
 const pageData = [
