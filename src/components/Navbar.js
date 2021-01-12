@@ -4,9 +4,7 @@ export function Navbar({ sticky }) {
   return (
     <nav className={sticky ? "navbar navbar-sticky" : "navbar"}>
       <div className="navbar--logo-holder">
-        {sticky ? (
-          <img src="/logo.png" alt="logo" className="navbar--logo" />
-        ) : null}
+        <img src="/logo.png" alt="logo" className="navbar--logo" />
         <h5 className="navbar--title">stevenjchang</h5>
       </div>
       <ul className="navbar--link">
