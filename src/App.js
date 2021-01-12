@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import useSticky from "hooks/useSticky.js";
 import { HomePage } from "./pages/HomePage";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "components/Footer";
 
 import "./App.scss";
 
@@ -21,6 +22,7 @@ function App() {
           </Route>
         </Switch>
       </PageWrapper>
+      <Footer />
     </Router>
   );
 }
