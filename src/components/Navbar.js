@@ -8,11 +8,24 @@ export function Navbar({ sticky }) {
         <h5 className="navbar--title">stevenjchang</h5>
       </div>
       <ul className="navbar--link">
-        <li className="navbar--link-item">Services</li>
-        <li className="navbar--link-item">Portfolio</li>
-        <li className="navbar--link-item">Testimonies</li>
-        <li className="navbar--link-item">About</li>
-        <li className="navbar--link-item">Contact</li>
+        <li className="navbar--link-item">
+          <a href="">Services</a>
+        </li>
+        <li className="navbar--link-item">
+          <a href="">Portfolio</a>
+        </li>
+        <li className="navbar--link-item">
+          <a href="#experience-section">Resume</a>
+        </li>
+        <li className="navbar--link-item">
+          <a href="#testimonial-section">Testimonies</a>
+        </li>
+        <li className="navbar--link-item">
+          <a href="">About</a>
+        </li>
+        {/* <li className="navbar--link-item">
+          <a href="">Contact</a>
+        </li> */}
       </ul>
     </nav>
   );

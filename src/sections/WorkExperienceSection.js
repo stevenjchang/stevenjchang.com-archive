@@ -11,6 +11,11 @@ export const WorkExperienceSection = () => {
           {pageData.map((data, idx) => (
             <Card key={idx} {...data} />
           ))}
+          <div className="button-wrapper">
+            <button className="button--download-resume btn btn-info">
+              See Full Resume
+            </button>
+          </div>
         </div>
       </div>
     </>
