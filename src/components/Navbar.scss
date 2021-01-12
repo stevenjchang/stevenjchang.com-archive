@@ -12,12 +12,27 @@
 
 .navbar-sticky {
   background-color: white;
-  // background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   box-shadow: 1px 0px 1px #222;
   animation: moveDown 0.5s ease-in-out;
+}
+
+.navbar .navbar--link-item a {
+  color: rgb(255, 253, 253);
+  font-weight: 600;
+}
+.navbar h5 {
+  color: white;
+}
+
+.navbar-sticky .navbar--link-item a {
+  color: rgb(99, 97, 97);
+}
+
+.navbar-sticky h5 {
+  color: rgb(99, 97, 97);
 }
 
 .navbar--logo-holder {
@@ -50,10 +65,6 @@
   margin: 0 1rem 0 0;
   padding: 0 0.5rem;
   cursor: pointer;
-}
-
-.navbar--link-item a {
-  color: rgb(99, 97, 97);
 }
 
 .navbar {
