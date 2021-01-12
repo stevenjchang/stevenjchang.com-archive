@@ -29,7 +29,11 @@ function App() {
 
 // for sticky nav to work
 function PageWrapper({ element, children }) {
-  return <div ref={element}>{children}</div>;
+  return (
+    <div className="pageWrapper" ref={element}>
+      {children}
+    </div>
+  );
 }
 
 function About() {
