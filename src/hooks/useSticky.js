@@ -5,7 +5,7 @@ function useSticky() {
   const element = useRef(null);
 
   const handleScroll = useCallback(() => {
-    console.log("scrollY ==>", window.scrollY);
+    // console.log("scrollY ==>", window.scrollY);
     window.scrollY > 151 ? setSticky(true) : setSticky(false);
   }, []);
 

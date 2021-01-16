@@ -1,2 +1,5 @@
-[ ] add services I offer section, with tabs using css only
-[url](https://codepen.io/dhs/pen/diasg?editors=1100)
+[ ] section transition - how to add transition when page transitions to section.
+
+[ ] put face in logo
+[ ] add tailwind
+[ ] smooth scroll

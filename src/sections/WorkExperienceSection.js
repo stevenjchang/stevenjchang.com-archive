@@ -1,6 +1,6 @@
 import React from "react";
-
 import "sections/WorkExperienceSection.scss";
+const { REACT_APP_RESUME_URL } = process.env;
 
 export const WorkExperienceSection = () => {
   return (
@@ -12,9 +12,11 @@ export const WorkExperienceSection = () => {
             <Card key={idx} {...data} />
           ))}
           <div className="button-wrapper">
-            <button className="button--download-resume btn btn-info">
-              See Full Resume
-            </button>
+            <a href={REACT_APP_RESUME_URL} target="_blank" rel="noreferrer">
+              <button className="button--download-resume btn btn-info">
+                See Full Resume
+              </button>
+            </a>
           </div>
         </div>
       </div>

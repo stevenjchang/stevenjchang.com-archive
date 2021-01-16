@@ -9,8 +9,8 @@ export function HeroSection() {
           <h1>Marketing Consultant</h1>
           <br />
           <p className="hero-section--description">
-            Based out of San Francisco. I have experience working with early
-            stage startups and small businesses.
+            Based out of San Francisco. I enjoy working with early stage
+            startups and small businesses.
             <br />
             <br />
             Aside from general development, I can help you get set up with
@@ -19,7 +19,9 @@ export function HeroSection() {
           </p>
           <br />
           <div className="">
-            <button className="btn btn-info">view experience</button>
+            <a href="#experience-section">
+              <button className="btn btn-info">view experience</button>
+            </a>
             <button className="btn btn-secondary">see services</button>
           </div>
         </div>
