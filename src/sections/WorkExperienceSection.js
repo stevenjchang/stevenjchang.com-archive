@@ -95,7 +95,7 @@ const pageData = [
     ],
   },
   {
-    jobTitle: "Frontend Engineer",
+    jobTitle: "Software Engineer",
     company: "nimasensor",
     cssClasses: "company-card company-2",
     companyColor: "#ffc00e",
