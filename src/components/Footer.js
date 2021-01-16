@@ -17,7 +17,10 @@ export const Footer = () => {
   return (
     <>
       <div className="section-background py-24">
-        <div id="footer" className="container mx-auto flex justify-around w-40">
+        <div
+          id="footer"
+          className="container mx-auto flex justify-around w-40 bg-yellow-200"
+        >
           <a href={REACT_APP_LINKEDIN_URL}>
             <FaLinkedin {...iconConfig} />
           </a>
