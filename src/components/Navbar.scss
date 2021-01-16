@@ -46,14 +46,18 @@
 }
 
 .navbar--logo {
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 2.4rem;
+  height: 2.4rem;
   margin-right: 0.5rem;
   border-radius: 25px;
   animation: rotate 0.7s ease-in-out 0.5s;
 }
 
 .navbar--title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  font-style: italic;
   margin-bottom: 2px;
 }
 
@@ -70,12 +74,6 @@
   margin: 0 1rem 0 0;
   padding: 0 0.5rem;
   cursor: pointer;
-}
-
-.navbar {
-  h5 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
 }
 
 @keyframes moveDown {

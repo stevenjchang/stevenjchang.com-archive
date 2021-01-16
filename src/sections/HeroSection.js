@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import "sections/HeroSection.scss";
 
 export function HeroSection() {
@@ -6,7 +7,7 @@ export function HeroSection() {
       <section id="hero-section" className="section-inner">
         <div className="left">
           <h1 className="">Software Engineer &</h1>
-          <h1>Marketing Consultant</h1>
+          <h1 className="h1-small">Marketing Consultant</h1>
           <br />
           <p className="hero-section--description">
             Based out of San Francisco. I enjoy working with early stage
@@ -18,11 +19,22 @@ export function HeroSection() {
             Have a tracking bug you can't solve? Contact me for a consultation.
           </p>
           <br />
-          <div className="">
-            <a href="#experience-section">
-              <button className="btn btn-info">view experience</button>
-            </a>
-            <button className="btn btn-secondary">see services</button>
+          <div className="mt-2">
+            <Link
+              to="experience-section"
+              spy={true}
+              smooth={true}
+              duration={1500}
+            >
+              <button className="cta-button cta-button__primary mr-8">
+                View Experience
+              </button>
+            </Link>
+            <Link to="service-section" spy={true} smooth={true} duration={1500}>
+              <button className="cta-button cta-button__secondary button-2">
+                See Services
+              </button>
+            </Link>
           </div>
         </div>
         <div className="right">

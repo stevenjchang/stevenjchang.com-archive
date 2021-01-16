@@ -21,7 +21,7 @@
   align-items: center;
   padding: 8rem 2rem 4rem 2rem;
   @media screen and (min-width: 768px) {
-    height: 100vh;
+    height: 85vh;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -46,9 +46,9 @@
 }
 
 #hero-section h1 {
-  font-size: 28px;
+  // font-size: 28px;
   @media screen and (min-width: 768px) {
-    font-size: 40px;
+    // font-size: 40px;
   }
 }
 
@@ -60,4 +60,30 @@
 
 .btn {
   margin-right: 24px;
+}
+
+.cta-button {
+  padding: 0.5em 0.75em;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition-duration: 10ms;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    transform: translate(0px, 3px);
+  }
+  &__primary {
+    @apply bg-blue-700;
+    @apply border-blue-700;
+
+    color: white;
+  }
+  &__secondary {
+    // @apply bg-gray-200;
+    // @apply text-gray-700;
+    border-color: white;
+  }
 }
