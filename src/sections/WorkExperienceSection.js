@@ -5,18 +5,20 @@ const { REACT_APP_RESUME_URL } = process.env;
 export const WorkExperienceSection = () => {
   return (
     <>
-      <div id="experience-section" className="section-background section-outer">
-        <h2>Work Experience</h2>
-        <div className="container mx-auto">
-          {pageData.map((data, idx) => (
-            <Card key={idx} {...data} />
-          ))}
-          <div className="button-wrapper">
-            <a href={REACT_APP_RESUME_URL} target="_blank" rel="noreferrer">
-              <button className="button--download-resume btn btn-info">
-                See Full Resume
-              </button>
-            </a>
+      <div className="section-background section-outer">
+        <div id="experience-section">
+          <h2>Work Experience</h2>
+          <div className="container mx-auto">
+            {pageData.map((data, idx) => (
+              <Card key={idx} {...data} />
+            ))}
+            <div className="button-wrapper">
+              <a href={REACT_APP_RESUME_URL} target="_blank" rel="noreferrer">
+                <button className="button--download-resume btn btn-info">
+                  See Full Resume
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

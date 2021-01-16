@@ -23,6 +23,10 @@
   color: rgb(255, 253, 253);
   font-weight: 600;
 }
+.navbar .navbar--link-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
 .navbar h5 {
   color: white;
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import "components/Navbar.scss";
 
 export function Navbar({ sticky }) {
@@ -9,19 +10,60 @@ export function Navbar({ sticky }) {
       </div>
       <ul className="navbar--link">
         <li className="navbar--link-item">
-          <a href="">Services</a>
+          <Link
+            className=""
+            to="service-section"
+            spy={true}
+            smooth={true}
+            duration={1500}
+          >
+            Services
+          </Link>
         </li>
         <li className="navbar--link-item">
-          <a href="">Portfolio</a>
+          <Link
+            className=""
+            to="portfolio-section"
+            spy={true}
+            smooth={true}
+            duration={1500}
+          >
+            Portfolio
+          </Link>
         </li>
         <li className="navbar--link-item">
-          <a href="#experience-section">Resume</a>
+          <Link
+            className=""
+            to="experience-section"
+            spy={true}
+            smooth={true}
+            duration={1500}
+            offset={-100}
+          >
+            Experience
+          </Link>
         </li>
         <li className="navbar--link-item">
-          <a href="#testimonial-section">Testimonies</a>
+          <Link
+            className=""
+            to="testimonial-section"
+            spy={true}
+            smooth={true}
+            duration={1500}
+          >
+            Testimonies
+          </Link>
         </li>
         <li className="navbar--link-item">
-          <a href="">About</a>
+          <Link
+            className=""
+            to="about-section"
+            spy={true}
+            smooth={true}
+            duration={1500}
+          >
+            About
+          </Link>
         </li>
         {/* <li className="navbar--link-item">
           <a href="">Contact</a>
