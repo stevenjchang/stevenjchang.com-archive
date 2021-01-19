@@ -9,11 +9,11 @@ export function HeroSection() {
           <h1 className="">Software Engineer &</h1>
           <h1 className="h1-small">Marketing Consultant</h1>
           <br />
-          <p className="hero-section--description">
+          <p className="hero-section--description mb-2">
             Based out of San Francisco. I enjoy working with early stage
             startups and small businesses.
-            <br />
-            <br />
+          </p>{" "}
+          <p className="hero-section--description">
             Aside from general development, I can help you get set up with
             marketing tools, especially with integration and troubleshooting.
             Have a tracking bug you can't solve? Contact me for a consultation.

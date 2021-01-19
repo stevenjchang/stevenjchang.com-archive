@@ -1,0 +1,28 @@
+#portfolio-section .card-container {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  @apply m-16;
+}
+#portfolio-section .card-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* #portfolio-section .card-container:nth-child(odd) .image-container {
+  border-left: 1px solid #eaeaea;
+} */
+/* #portfolio-section .card-container:nth-child(even) .image-container {
+  border-right: 1px solid #eaeaea;
+} */
+#portfolio-section .card-container .image-container {
+  border: 5px solid #2b6cb0;
+}
+
+@media (max-width: 1023px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 1024px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
