@@ -30,11 +30,11 @@ export function HeroSection() {
                 View Experience
               </button>
             </Link>
-            <Link to="service-section" spy={true} smooth={true} duration={1500}>
+            {/* <Link to="service-section" spy={true} smooth={true} duration={1500}>
               <button className="cta-button cta-button__secondary button-2">
                 See Services
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="right">

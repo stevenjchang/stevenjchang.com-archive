@@ -9,7 +9,7 @@ export function Navbar({ sticky }) {
         <h5 className="navbar--title">stevenjchang.com</h5>
       </div>
       <ul className="navbar--link">
-        <li className="navbar--link-item">
+        {/* <li className="navbar--link-item">
           <Link
             className=""
             to="service-section"
@@ -18,6 +18,18 @@ export function Navbar({ sticky }) {
             duration={1500}
           >
             Services
+          </Link>
+        </li> */}
+        <li className="navbar--link-item">
+          <Link
+            className=""
+            to="experience-section"
+            spy={true}
+            smooth={true}
+            duration={1500}
+            offset={-100}
+          >
+            Resume
           </Link>
         </li>
         <li className="navbar--link-item">
@@ -28,19 +40,7 @@ export function Navbar({ sticky }) {
             smooth={true}
             duration={1500}
           >
-            Portfolio
-          </Link>
-        </li>
-        <li className="navbar--link-item">
-          <Link
-            className=""
-            to="experience-section"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            offset={-100}
-          >
-            Experience
+            Projects
           </Link>
         </li>
         <li className="navbar--link-item">
@@ -54,7 +54,7 @@ export function Navbar({ sticky }) {
             Testimonies
           </Link>
         </li>
-        <li className="navbar--link-item">
+        {/* <li className="navbar--link-item">
           <Link
             className=""
             to="about-section"
@@ -64,7 +64,7 @@ export function Navbar({ sticky }) {
           >
             About
           </Link>
-        </li>
+        </li> */}
         {/* <li className="navbar--link-item">
           <a href="">Contact</a>
         </li> */}
