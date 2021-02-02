@@ -9,7 +9,7 @@ export function HomePage() {
   return (
     <>
       <HeroSection />
-      {/* <ServiceSection /> */}
+      <ServiceSection />
       <WorkExperienceSection />
       <PortfolioSection />
       <TestimonialSection />

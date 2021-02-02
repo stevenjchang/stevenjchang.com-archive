@@ -1,25 +1,21 @@
 @import "mixins.scss";
+@import "variables.scss";
 
 .service-section-outer {
   // background-color: #77bbd8;
   // background-color: #100c31;
   // background-color: #2f355b;
   // background-color: #d7dbdf;
-  // background: rgb(37, 160, 255);
-  // background: linear-gradient(
-  //   147deg,
-  //   rgba(37, 160, 255, 1) 0%,
-  //   rgba(91, 175, 228, 1) 48%,
-  //   rgba(0, 212, 255, 1) 100%
-  // );
+  // background-color: #f3f4f5;
+  // background: linear-gradient(-5deg, #f3f4f5 83%, transparent 50%);
 }
 .service-section-outer h2 {
   text-align: center;
-  color: white;
+  @apply text-gray-600;
+  margin-bottom: 1.5em;
 }
 .service-section {
   // background-color: #7997ff;
-
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
@@ -43,29 +39,40 @@
 }
 
 .tab {
-  height: 100px;
+  height: 80px;
   border: 1px solid white;
   display: flex;
-  padding-left: 2em;
   align-items: center;
   margin: 0.5em;
   // background-color: white;
-  color: white;
+  color: blue;
   border-radius: 13px;
-  background: rgb(37, 160, 255);
-  background: linear-gradient(
-    147deg,
-    rgba(37, 160, 255, 1) 0%,
-    rgba(91, 175, 228, 1) 48%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  opacity: 0.6;
+  opacity: 0.8;
   font-weight: 500;
+  position: relative;
 }
 .tab.active {
-  // background-color: rgb(240, 240, 240);
-  // border-right: none;
   opacity: 1;
+}
+
+.tab::before {
+  position: absolute;
+  left: -3em;
+  content: "\A";
+  // color: #b83b3b;
+  // background: #b83b3b;
+  border-radius: 50%;
+  text-shadow: #b83b3b 0 0 5px;
+  // margin: 0 1em 0 1em;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 10px 1px rgba(0, 255, 182, 0.15),
+    0px 0px 10px rgba(0, 255, 182, 0.1);
+}
+.tab.active::before {
+  background: rgb(101, 206, 201);
+  animation: help-bubble-pulse 1.5s linear infinite;
 }
 
 .tab-content {
@@ -213,4 +220,20 @@ input[name="tab"]:checked + .tab-content {
   height: 100%;
   flex-direction: column;
   justify-content: center;
+}
+
+// animation - glowing dots
+@keyframes help-bubble-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  25% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }

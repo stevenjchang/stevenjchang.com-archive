@@ -12,6 +12,7 @@ const array = [
     text:
       "I can help you with a new e-commerce site from scratch, customize a shopify/woo-commerce solution, or simple integrate payment systems onto an existing site",
   },
+  { name: `Coding Coach`, text: `hello` },
   {
     name: `Marketing support`,
     text:
