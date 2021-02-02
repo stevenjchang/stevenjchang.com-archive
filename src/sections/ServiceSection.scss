@@ -15,7 +15,6 @@
   margin-bottom: 1.5em;
 }
 .service-section {
-  // background-color: #7997ff;
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
@@ -44,22 +43,22 @@
   display: flex;
   align-items: center;
   margin: 0.5em;
-  // background-color: white;
-  color: blue;
+  // color: blue;
+  color: #8e92a1;
   border-radius: 13px;
-  opacity: 0.8;
+  // opacity: 0.8;
   font-weight: 500;
   position: relative;
 }
 .tab.active {
   opacity: 1;
+  color: blue;
 }
 
 .tab::before {
   position: absolute;
   left: -3em;
-  content: "\A";
-  // color: #b83b3b;
+  // content: "\A";
   // background: #b83b3b;
   border-radius: 50%;
   text-shadow: #b83b3b 0 0 5px;
@@ -71,6 +70,7 @@
     0px 0px 10px rgba(0, 255, 182, 0.1);
 }
 .tab.active::before {
+  content: "\A";
   background: rgb(101, 206, 201);
   animation: help-bubble-pulse 1.5s linear infinite;
 }
