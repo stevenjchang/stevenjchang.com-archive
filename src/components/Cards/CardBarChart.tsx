@@ -1,9 +1,16 @@
 import React from 'react';
+
 import Chart from 'chart.js';
+
+declare global {
+  interface Window {
+    myBar: any;
+  }
+}
 
 export default function CardBarChart() {
   React.useEffect(() => {
-    const config = {
+    const config: any = {
       type: 'bar',
       data: {
         labels: [
@@ -95,7 +102,9 @@ export default function CardBarChart() {
         },
       },
     };
-    const ctx = document.getElementById('bar-chart').getContext('2d');
+    // const ctx = document?.getElementById('bar-chart')?.getContext('2d');
+    const canvas = document.getElementById('bar-chart') as HTMLCanvasElement;
+    const ctx = canvas.getContext('2d') as unknown as CanvasRenderingContext2D;
     window.myBar = new Chart(ctx, config);
   }, []);
   return (

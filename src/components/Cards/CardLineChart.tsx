@@ -1,9 +1,16 @@
 import React from 'react';
+
 import Chart from 'chart.js';
+
+declare global {
+  interface Window {
+    myLine: any;
+  }
+}
 
 export default function CardLineChart() {
   React.useEffect(() => {
-    const config = {
+    const config: any = {
       type: 'line',
       data: {
         labels: [
@@ -103,7 +110,9 @@ export default function CardLineChart() {
         },
       },
     };
-    const ctx = document.getElementById('line-chart').getContext('2d');
+    // const ctx = document.getElementById('line-chart').getContext('2d');
+    const canvas = document.getElementById('line-chart') as HTMLCanvasElement;
+    const ctx = canvas.getContext('2d') as unknown as CanvasRenderingContext2D;
     window.myLine = new Chart(ctx, config);
   }, []);
   return (
