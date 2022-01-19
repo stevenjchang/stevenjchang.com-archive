@@ -1,17 +1,25 @@
-/* eslint-disable no-unused-expressions */
 import React from 'react';
-import Link from 'next/link';
-import { createPopper } from '@popperjs/core';
 
-const PagesDropdown = () => {
+import { createPopper } from '@popperjs/core';
+import type { StrictModifiers } from '@popperjs/core';
+import Link from 'next/link';
+
+// type CustomModifier = Modifier<'custom', { customOption: boolean }>;
+// type ExtendedModifiers = StrictModifiers | $Shape<CustomModifier>;
+
+const IndexDropdown = () => {
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
-  const btnDropdownRef = React.createRef();
-  const popoverDropdownRef = React.createRef();
+  const btnDropdownRef = React.createRef<HTMLAnchorElement>();
+  const popoverDropdownRef = React.createRef<HTMLDivElement>();
   const openDropdownPopover = () => {
-    createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
-      placement: 'bottom-start',
-    });
+    createPopper<StrictModifiers>(
+      btnDropdownRef.current as any,
+      popoverDropdownRef.current as any,
+      {
+        placement: 'bottom-start',
+      }
+    );
     setDropdownPopoverShow(true);
   };
   const closeDropdownPopover = () => {
@@ -20,12 +28,18 @@ const PagesDropdown = () => {
   return (
     <>
       <a
-        className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+        className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
         href="#pablo"
         ref={btnDropdownRef}
         onClick={(e) => {
           e.preventDefault();
-          dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
+
+          if (dropdownPopoverShow) {
+            closeDropdownPopover();
+          } else {
+            openDropdownPopover();
+          }
+          // dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}
       >
         Demo Pages
@@ -144,4 +158,4 @@ const PagesDropdown = () => {
   );
 };
 
-export default PagesDropdown;
+export default IndexDropdown;

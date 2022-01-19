@@ -9,7 +9,8 @@ import IndexNavbar from '@/components/Navbars/IndexNavbar';
 export default function Index() {
   return (
     <>
-      <IndexNavbar fixed />
+      {/* <IndexNavbar fixed /> */}
+      <IndexNavbar />
       <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
@@ -427,10 +428,10 @@ export default function Index() {
                   Complex Documentation
                 </h3>
                 <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                  This extension comes a lot of fully coded examples that help
+                  {`This extension comes a lot of fully coded examples that help
                   you get started faster. You can adjust the colors and also the
                   programming language. You can change the text and images and
-                  you're good to go.
+                  you're good to go.`}
                 </p>
                 <ul className="list-none mt-6">
                   <li className="py-2">
