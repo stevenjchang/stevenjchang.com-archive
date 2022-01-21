@@ -4,6 +4,7 @@ import Link from 'next/link';
 // components
 
 import IndexDropdown from '@/components/Dropdowns/IndexDropdown';
+import { NAVBAR } from '@/data/navbarData';
 
 // type INavbarProps = {
 //   fixed?: boolean;
@@ -18,10 +19,10 @@ export default function Navbar() {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <a
-                className="text-slate-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                className="text-slate-700 text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                 href="#pablo"
               >
-                Notus NextJS
+                {NAVBAR.logoText}
               </a>
             </Link>
             <button

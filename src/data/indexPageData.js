@@ -1,33 +1,33 @@
 export const HERO = {
   heading: (
     <>
-      Frontend Engineer &
+      {/* Are you looking for a developer?
+      <br /> */}
+      Frontend Engineer,
       <br />
-      Marketing Tech specialist
+      Specializing in Ad-tech/Mar-tech
     </>
   ),
   paragraph: (
     <>
-      Notus NextJS is Free and Open Source. It does not change any of the CSS
-      from{' '}
+      Based out of San Francisco. I enjoy working with early stage startups and
+      small businesses.{' '}
       <a
         href="https://tailwindcss.com/?ref=creativetim"
         className="text-slate-600"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Tailwind CSS
+        link
       </a>
-      . It features multiple HTML elements and it comes with dynamic components
-      for ReactJS, Vue and Angular.
+      <br />
+      Aside from general development, I can help you get set up with marketing
+      tools, especially with integration and troubleshooting. Have a tracking
+      bug you can't solve? Contact me for a consultation.
     </>
   ),
-  cta: 'get started',
-  cta2: 'github star',
-};
-
-export const NAVBAR = {
-  cta: 'download',
+  cta: 'see github',
+  cta2: 'view experience',
 };
 
 export const SECTION_1 = {
@@ -84,9 +84,19 @@ export const SECTION_5 = {
   paragraph: 'para',
   items: [
     {
-      heading: 'heading',
-      imgUrl: 'imgurl',
-      url: '',
+      heading: 'Login Page',
+      imgUrl: '/img/login.jpg',
+      url: '/auth/login',
+    },
+    {
+      heading: 'Profile page',
+      imgUrl: '/img/profile.jpg',
+      url: '/profile',
+    },
+    {
+      heading: 'Landing Page',
+      imgUrl: '/img/landing.jpg',
+      url: '/landing',
     },
   ],
 };
