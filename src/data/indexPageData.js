@@ -3,23 +3,16 @@ export const HERO = {
     <>
       {/* Are you looking for a developer?
       <br /> */}
-      Frontend Engineer,
+      Frontend Engineer |
       <br />
-      Specializing in Ad-tech/Mar-tech
+      Technical SEO specialist
     </>
   ),
   paragraph: (
     <>
       Based out of San Francisco. I enjoy working with early stage startups and
-      small businesses.{' '}
-      <a
-        href="https://tailwindcss.com/?ref=creativetim"
-        className="text-slate-600"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        link
-      </a>
+      small businesses.
+      <br />
       <br />
       Aside from general development, I can help you get set up with marketing
       tools, especially with integration and troubleshooting. Have a tracking

@@ -12,6 +12,16 @@ a:hover {
 
 @tailwind utilities;
 
+.flex-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-1 {
+  align-items: stretch
+}
+
 .content p {
   @apply my-6;
 }
