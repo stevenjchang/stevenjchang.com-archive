@@ -1,7 +1,14 @@
-sections
+Idea for portfolio page
+* for your demo/portfolio projects section
+  * each section should have the hero of the project's landing page as a bg
+  * it should have a number, hovering on the left
+  * it could have a video.
+  * I like how clean this page is https://stampfans.com/
 
-Hero
 
+Check out the strapi pricing page for idea on tabing your services
+
+codingbuddies forum
 
 Shark tank idea. Let's come up with one thing.
 

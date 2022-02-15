@@ -1,7 +1,10 @@
 /** @jsxImportSource @emotion/react */
+import { useEffect } from 'react';
+
 import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled';
 
+import { createFakeData } from '@/data/sharkTankEpisodesData';
 import { useCurrentEpisode } from '@/hooks/useCurrentEpisode';
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
@@ -60,9 +63,14 @@ const Circle = ({ children }) => {
 };
 
 function StatusBar() {
-  const { metaData, data, setter } = useCurrentEpisode();
+  const { metaData, data, setter, seg } = useCurrentEpisode();
+  console.log('StatusBarNav ==>');
+  console.log('segtest ==>', seg);
+  useEffect(() => {
+    console.log('useEffect ==>', seg);
+  }, [seg]);
 
-  const num = metaData.totalSegmentsNo ? metaData.totalSegmentsNo + 4 : 0;
+  const num = 5;
   return (
     <div className="flex-c-c flex-col mt-24 border-2">
       <div className="flex w-full test-1">
@@ -88,6 +96,7 @@ function StatusBar() {
           );
         })}
       </div>
+      <div className="">{metaData.episodeTitle}</div>
     </div>
   );
 }
@@ -109,6 +118,7 @@ function Box() {
 
 function BottomNav() {
   const { setter } = useCurrentEpisode();
+  console.log('BottomNav ==>');
   return (
     <>
       <div className="flex justify-between py-4">

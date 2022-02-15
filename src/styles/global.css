@@ -29,3 +29,7 @@ a:hover {
 .content ul {
   @apply my-6;
 }
+
+.rotate-image {
+  transform: rotateY(180deg);
+}

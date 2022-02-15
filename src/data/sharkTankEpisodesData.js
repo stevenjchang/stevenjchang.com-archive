@@ -93,3 +93,21 @@ export const SEASONS = [
     data: attachMeta(SEASON1),
   },
 ];
+
+export const createFakeData = () => {
+  const result = [];
+  for (let i = 1; i < 10; i += 1) {
+    for (let j = 1; j < 10; j += 1) {
+      for (let k = 1; k <= 5; k += 1) {
+        result.push({
+          season: i,
+          episode: j,
+          segment: k,
+          title: `Season ${i} Episode ${j} Segment ${k}`,
+        });
+      }
+    }
+  }
+
+  return result;
+};
