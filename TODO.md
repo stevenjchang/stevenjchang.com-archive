@@ -22,9 +22,11 @@ Let's do mobile first
 There should be comments. 
 Navbar should show the state of which episode they are in
 
-Conclusion:
-Build a component called Season?
-  It should have a status bar. Status bar shows season number, episode number. 
-  It should have a second status bar, shows product number.
-  It should have rating(s)
-  It should have comment bubble (plus highlighted comment)
+
+
+Okay, let's build a forum. Let's design it first.
+Everyone is a user.
+They should be able to post something.
+The the other users should be able to read the posts
+logged in users can react to a post
+post owner can edit/delete a post
