@@ -17,6 +17,7 @@ import { arrayGroupByN } from '@/utils/transform';
 
 export default function Index() {
   const test = arrayGroupByN(3, S4.items);
+
   return (
     <>
       {/* <IndexNavbar fixed /> */}
@@ -33,14 +34,14 @@ export default function Index() {
               </p>
               <div className="mt-12">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-index"
+                  href=""
                   target="_blank"
                   className="get-started text-white font-bold px-8 py-4 rounded-md outline-none focus:outline-none mr-4 mb-1 bg-slate-400 active:bg-slate-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                 >
                   {HERO.cta}
                 </a>
                 <a
-                  href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
+                  href=""
                   className="github-star ml-1 text-white font-bold px-8 py-4 rounded-md outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg"
                   target="_blank"
                 >
@@ -172,7 +173,7 @@ export default function Index() {
                 </span>
               </div>
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
+                href=""
                 target="_blank"
                 className="font-bold text-slate-700 hover:text-slate-500 ease-linear transition-all duration-150"
               >
@@ -289,7 +290,7 @@ export default function Index() {
                 </span>
               </div>
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
+                href=""
                 target="_blank"
                 className="font-bold text-slate-700 hover:text-slate-500 ease-linear transition-all duration-150"
               >
@@ -430,11 +431,7 @@ export default function Index() {
               </h3>
               <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-400">
                 Since{' '}
-                <a
-                  href="https://tailwindcss.com/?ref=creative"
-                  className="text-slate-300"
-                  target="_blank"
-                >
+                <a href="" className="text-slate-300" target="_blank">
                   Tailwind CSS
                 </a>{' '}
                 is an open source project we wanted to continue this movement
@@ -446,7 +443,7 @@ export default function Index() {
                 Star!
               </p>
               <a
-                href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
+                href=""
                 target="_blank"
                 className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg"
               >
@@ -500,14 +497,14 @@ export default function Index() {
               </p>
               <div className="sm:block flex flex-col mt-10">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-index"
+                  href=""
                   target="_blank"
                   className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-slate-400 active:bg-slate-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                 >
                   Get started
                 </a>
                 <a
-                  href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
+                  href=""
                   target="_blank"
                   className="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg"
                 >

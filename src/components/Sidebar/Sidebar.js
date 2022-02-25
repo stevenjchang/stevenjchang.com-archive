@@ -26,7 +26,7 @@ export default function Sidebar() {
               href="#pablo"
               className="md:block text-left md:pb-2 text-slate-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
             >
-              Notus NextJS
+              NextJS
             </a>
           </Link>
           {/* User */}
@@ -51,7 +51,7 @@ export default function Sidebar() {
                       href="#pablo"
                       className="md:block text-left md:pb-2 text-slate-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                     >
-                      Notus NextJS
+                      NextJS
                     </a>
                   </Link>
                 </div>
@@ -253,7 +253,7 @@ export default function Sidebar() {
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/colors/notus"
+                  href=""
                   target="_blank"
                   className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                   rel="noreferrer"
@@ -265,7 +265,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus"
+                  href=""
                   target="_blank"
                   className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                   rel="noreferrer"
@@ -277,7 +277,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/notus"
+                  href=""
                   target="_blank"
                   className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                   rel="noreferrer"
@@ -289,7 +289,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/js/overview/notus"
+                  href=""
                   target="_blank"
                   className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                   rel="noreferrer"
@@ -301,7 +301,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus"
+                  href=""
                   target="_blank"
                   className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                   rel="noreferrer"
@@ -313,7 +313,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus"
+                  href=""
                   target="_blank"
                   className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                   rel="noreferrer"
@@ -325,7 +325,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus"
+                  href=""
                   target="_blank"
                   className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                   rel="noreferrer"
@@ -337,7 +337,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus"
+                  href=""
                   target="_blank"
                   className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                   rel="noreferrer"

@@ -40,15 +40,13 @@ export const SECTION_1 = {
     {
       iconCN: 'fas fa-sitemap',
       heading: 'Organized',
-      paragraph:
-        'Notus NextJS comes with a huge number of Fully Coded CSS components.',
+      paragraph: '',
     },
     {
       // iconCN: 'fa-drafting-compass',
       iconCN: 'fas fa-wrench',
-      heading: 'Pages',
-      paragraph:
-        'This extension also comes with 3 sample pages. They are fully coded so you can start working instantly.',
+      heading: 'Thoughtful',
+      paragraph: '',
     },
     {
       iconCN: 'fas fa-eye',
@@ -60,8 +58,7 @@ export const SECTION_1 = {
       // iconCN: 'fas fa-file-alt',
       iconCN: 'fas fa-universal-access',
       heading: 'Documentation',
-      paragraph:
-        'Built by developers for developers. You will love how easy is to to work with Notus NextJS.',
+      paragraph: '',
     },
   ],
 };
