@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <div>
-      <nav className="p-6 border-b border-gray-300">
+      {/* <nav className="p-6 border-b border-gray-300">
         <Link href="/">
           <span className="mr-6 cursor-pointer">Home</span>
         </Link>
@@ -47,8 +47,8 @@ function MyApp({ Component, pageProps }: AppProps) {
             <span className="mr-6 cursor-pointer">My Posts</span>
           </Link>
         )}
-      </nav>
-      <div className="py-8 px-16">
+      </nav> */}
+      <div className="">
         <Component {...pageProps} />
       </div>
     </div>
