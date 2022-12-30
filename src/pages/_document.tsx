@@ -11,12 +11,15 @@ export default class MyDocument extends Document {
             href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900"
             rel="stylesheet"
           />
-          <Script src="https://cdn.tailwindcss.com"></Script>
         </Head>
         <body>
           {getInitColorSchemeScript()}
           <Main />
           <NextScript />
+          <Script
+            strategy="beforeInteractive"
+            src="https://cdn.tailwindcss.com"
+          ></Script>
         </body>
       </Html>
     );

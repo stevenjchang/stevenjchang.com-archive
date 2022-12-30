@@ -10,7 +10,8 @@
     "url": ""
   },
   "scripts": {
-    "dev": "concurrently \"next dev\" \"yarn codegen:watch\"",
+    "dev:watch": "concurrently \"next dev\" \"yarn codegen:watch\"",
+    "dev": "next dev",
     "build": "next build",
     "build:analyze": "ANALYZE=true yarn build",
     "start": "next start",
