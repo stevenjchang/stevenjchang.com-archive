@@ -49,7 +49,7 @@ const AppPage = (props: PropsWithChildren) => {
         <Box
           sx={(theme) => ({
             margin: `0 auto`,
-            maxWidth: theme.breakpoints.values.lg,
+            // maxWidth: theme.breakpoints.values.lg,
           })}
         >
           <Stack direction="column">
@@ -115,7 +115,7 @@ const AppPage = (props: PropsWithChildren) => {
                 <Divider sx={{ mt: 2 }} />
               </Sheet>
             </Box>
-            <Box sx={{ p: 2, pt: 0 }}>{props.children}</Box>
+            <Box sx={{ p: 0, pt: 0 }}>{props.children}</Box>
           </Stack>
         </Box>
       </Sheet>

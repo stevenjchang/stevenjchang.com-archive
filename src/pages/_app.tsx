@@ -8,6 +8,7 @@ import { useApollo } from '@/graphql/apollo';
 import { ApolloProvider } from '@apollo/client';
 import AppPage from '@/components/AppPage';
 import { DefaultSeo } from 'next-seo';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const MyApp = ({
   Component,

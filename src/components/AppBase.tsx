@@ -4,7 +4,7 @@ import { appTheme } from '@/theme';
 
 const AppBase = (props: PropsWithChildren) => {
   return (
-    <CssVarsProvider theme={appTheme} defaultMode="dark">
+    <CssVarsProvider theme={appTheme}>
       <CssBaseline />
       {props.children}
     </CssVarsProvider>
