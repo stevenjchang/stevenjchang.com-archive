@@ -21,6 +21,7 @@ import {
 // import IndexNavbar from '@/components/Navbars/IndexNavbar';
 import { arrayGroupByN } from '@/utils/transform';
 import HeroSection from '@/projects/homepage/sections/HeroSection';
+import IndexNavbar from '@/projects/homepage/Navbars/IndexNavbar';
 
 export interface HomePageProps {
   contentHtml: string;
@@ -35,6 +36,7 @@ const HomePage = (props: any) => {
 
   return (
     <>
+      <IndexNavbar />
       <HeroSection />
 
       <section className="mt-48 md:mt-40 pb-40 relative bg-slate-100">
@@ -366,9 +368,7 @@ const HomePage = (props: any) => {
           <div className="w-full md:w-6/12 px-12 md:px-4">
             <h2 className="font-semibold text-4xl">Beautiful Example Pages</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-slate-500">
-              Notus NextJS is a completly new product built using our past
-              experience in web templates. Take the examples we made for you and
-              start playing with them.
+              {/* description */}
             </p>
           </div>
         </div>

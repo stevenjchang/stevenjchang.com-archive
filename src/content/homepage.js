@@ -46,26 +46,27 @@ export const SECTION_1 = {
   items: [
     {
       iconCN: 'fas fa-sitemap',
-      heading: 'Organized',
-      paragraph: '',
+      heading: 'Responsive web pages',
+      paragraph: 'I make sure sites work across various browsers and dimension',
     },
     {
       // iconCN: 'fa-drafting-compass',
       iconCN: 'fas fa-wrench',
-      heading: 'Thoughtful',
-      paragraph: '',
+      heading: 'Ownership',
+      paragraph:
+        'I can do my own research, requirement gathering, time-line estimation.',
     },
     {
       iconCN: 'fas fa-eye',
       heading: 'An eye for UX',
-      paragraph:
-        'You can expect a rapid response rate, and regular status updates',
+      paragraph: 'Always have the purpose and end user in mind.',
     },
     {
       // iconCN: 'fas fa-file-alt',
       iconCN: 'fas fa-universal-access',
-      heading: 'Documentation',
-      paragraph: '',
+      heading: 'Good Communication',
+      paragraph:
+        'You can expect a rapid response rate, and regular status updates.',
     },
   ],
 };

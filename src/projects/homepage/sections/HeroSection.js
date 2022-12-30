@@ -32,7 +32,7 @@ const HeroSection = () => {
               <img className="h-auto" src="/img/podcast_steve.svg" alt="" />
             </div>
           </div> */}
-          <div className="right lg:w-1/2 p-6 lg:p-16 ml-16">
+          <div className="right lg:w-1/2 p-6 lg:p-16 ml-8">
             <h1 className="font-semibold text-5xl text-slate-900">
               Steven J Chang
             </h1>
