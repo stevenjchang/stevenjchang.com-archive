@@ -21,6 +21,7 @@ import {
 // import IndexNavbar from '@/components/Navbars/IndexNavbar';
 import { arrayGroupByN } from '@/utils/transform';
 import HeroSection from '@/projects/homepage/sections/HeroSection';
+// import HireMeSection from '@/projects/homepage/sections/HireMeSection';
 import IndexNavbar from '@/projects/homepage/Navbars/IndexNavbar';
 
 export interface HomePageProps {
@@ -38,6 +39,7 @@ const HomePage = (props: any) => {
     <>
       <IndexNavbar />
       <HeroSection />
+      {/* <HireMeSection /> */}
 
       <section className="mt-48 md:mt-40 pb-40 relative bg-slate-100">
         <div
