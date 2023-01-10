@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { useMemo, useReducer, useState } from 'react';
+import { useMemo, useReducer } from 'react';
 
 const Section = styled.div`
   max-width: 1280px;
@@ -68,7 +68,8 @@ const cssNowServing = css`
 
 const boxCss = css`
   height: 500px;
-  background-color: gray;
+  font-size: 150px;
+  color: gray;
 `;
 
 const cssMinus = css`
@@ -76,15 +77,38 @@ const cssMinus = css`
   height: 50px;
 `;
 
-const reducer = (state, action) => {
+enum ScoreActionOptions {
+  decrement = 'decrement',
+  increment = 'increment',
+}
+
+type PlayerNum = 'player1' | 'player2';
+
+interface ScoreActionType {
+  // player: 'player1' | 'player2';
+  player: PlayerNum;
+  type: ScoreActionOptions;
+}
+
+interface ScoreState {
+  allScore: Array<any>;
+  name1: string;
+  name2: string;
+  player1: number;
+  player2: number;
+  pointsToPlayTo: number;
+  roundsToPlay: number;
+  switchServeOn: number;
+}
+
+const reducer = (state: ScoreState, action: ScoreActionType) => {
   const { type, player } = action;
+  // when player wins round
   if (type === 'increment' && state[player] >= state.pointsToPlayTo) {
     const currentRound = [state.player1, state.player2];
-    const allScore = [...state.allScore, currentRound];
-    console.log('allScore ==>', allScore);
     return {
       ...state,
-      allScore,
+      allScore: [...state.allScore, currentRound],
       player1: 0,
       player2: 0,
     };
@@ -105,36 +129,31 @@ const reducer = (state, action) => {
   return state;
 };
 
-const initialState = {
-  player1: 5,
+const initialState: ScoreState = {
+  player1: 0,
   player2: 0,
   allScore: [],
   name1: 'name 1',
   name2: 'name 2',
-  pointsToPlayTo: 4,
+  pointsToPlayTo: 8,
   switchServeOn: 3,
   roundsToPlay: 3,
 };
 
 const TennisPage = () => {
-  const [settings, setSettings] = useState({});
-
-  const [playerScore1, setPlayerScore1] = useState(0);
-  const [playerScore2, setPlayerScore2] = useState(0);
-
   const [score, dispatch] = useReducer(reducer, initialState);
 
-  const addPoint = (player: string) => {
-    return dispatch({ type: 'increment', player });
+  const addPoint = (player: PlayerNum) => {
+    return dispatch({ type: ScoreActionOptions.increment, player });
   };
-  const minusPoint = (player: string) => {
-    return dispatch({ type: 'decrement', player });
+  const minusPoint = (player: PlayerNum) => {
+    return dispatch({ type: ScoreActionOptions.decrement, player });
   };
 
-  const whoIsServing = useMemo(() => {
-    const total = playerScore1 + playerScore2;
-    return Math.floor(total / 5) % 2 === 0 ? 1 : 2;
-  }, [playerScore1, playerScore2]);
+  const firstPlayerIsServing = useMemo(() => {
+    const total = score.player1 + score.player2;
+    return Math.floor(total / 5) % 2 === 0 ? true : false;
+  }, [score.player1, score.player2]);
 
   return (
     <Section>
@@ -157,7 +176,14 @@ const TennisPage = () => {
           <div className="serve-left" css={cssNowServing}>
             player 1 serving
           </div>
-          <div className="box" css={boxCss} onClick={() => addPoint('player1')}>
+          <div
+            className="box"
+            css={boxCss}
+            onClick={() => addPoint('player1')}
+            style={{
+              backgroundColor: firstPlayerIsServing ? 'blue' : 'white',
+            }}
+          >
             {score.player1}
           </div>
           <div
@@ -177,6 +203,9 @@ const TennisPage = () => {
               className="box"
               css={boxCss}
               onClick={() => addPoint('player2')}
+              style={{
+                backgroundColor: !firstPlayerIsServing ? 'red' : 'white',
+              }}
             >
               {score.player2}
             </div>
