@@ -42,6 +42,7 @@ const HomePage = (props: any) => {
       {/* <HireMeSection /> */}
 
       <section className="mt-48 md:mt-40 pb-40 relative bg-slate-100">
+        {/* this is the gray slant */}
         <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
           style={{ transform: `translateZ(0)` }}
@@ -61,6 +62,10 @@ const HomePage = (props: any) => {
             ></polygon>
           </svg>
         </div>
+
+        <br />
+        <br />
+
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
@@ -155,14 +160,14 @@ const HomePage = (props: any) => {
                   Typography
                 </span>
               </div>
-              <a
+              {/* <a
                 href="/"
                 target="_blank"
                 className="font-bold text-slate-700 hover:text-slate-500 ease-linear transition-all duration-150"
               >
                 View All{' '}
                 <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-              </a>
+              </a> */}
             </div>
 
             <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32">
@@ -250,7 +255,7 @@ const HomePage = (props: any) => {
               <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-600">
                 {S4.paragraph}
               </p>
-              <div className="block pb-6">
+              {/* <div className="block pb-6">
                 <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-slate-500 bg-white uppercase last:mr-0 mr-2 mt-2">
                   Alerts
                 </span>
@@ -283,14 +288,14 @@ const HomePage = (props: any) => {
               >
                 View all
                 <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
         {/* END SECTION 4 */}
 
         {/* START SECTION 5 */}
-        <div className="container mx-auto px-4 pb-32 pt-48">
+        {/* <div className="container mx-auto px-4 pb-32 pt-48">
           <div className="items-center flex flex-wrap">
             <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
               <div className="md:pr-12">
@@ -364,13 +369,13 @@ const HomePage = (props: any) => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="justify-center text-center flex flex-wrap mt-24">
           <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className="font-semibold text-4xl">Beautiful Example Pages</h2>
+            <h2 className="font-semibold text-4xl">{SECTION_5.heading}</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-slate-500">
-              {/* description */}
+              {SECTION_5.paragraph}
             </p>
           </div>
         </div>

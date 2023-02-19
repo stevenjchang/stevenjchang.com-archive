@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Divider,
-  IconButton,
-  Sheet,
-  Stack,
-  Typography,
-} from '@mui/joy';
+import { Box, Button, IconButton, Sheet, Stack, Typography } from '@mui/joy';
 import { PropsWithChildren, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import ThemeModeToggle from './ThemeModeToggle';
@@ -112,7 +104,7 @@ const AppPage = (props: PropsWithChildren) => {
                     </>
                   )}
                 </Stack>
-                <Divider sx={{ mt: 2 }} />
+                {/* <Divider sx={{ mt: 2 }} /> */}
               </Sheet>
             </Box>
             <Box sx={{ p: 0, pt: 0 }}>{props.children}</Box>

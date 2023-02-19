@@ -63,17 +63,17 @@ export default function Navbar() {
                 </a>
               </li> */}
 
-              {/* <li className="flex items-center">
+              <li className="flex items-center">
                 <Link
-                  href="/"
+                  href="https://www.linkedin.com/in/stevenjchang/"
                   className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="text-slate-400 fab fa-twitter text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Tweet</span>
+                  <i className="text-slate-400 fab fa-linkedin text-lg leading-lg" />
+                  <span className="lg:hidden inline-block ml-2">LinkedIn</span>
                 </Link>
-              </li> */}
+              </li>
 
               <li className="flex items-center">
                 <Link

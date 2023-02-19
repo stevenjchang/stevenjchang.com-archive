@@ -1,39 +1,69 @@
+import {
+  Box,
+  Button,
+  Divider,
+  IconButton,
+  Sheet,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+} from '@mui/joy';
+
 export const HERO = {
   heading: (
     <>
       {/* Are you looking for a developer?
       <br /> */}
-      Frontend Engineer |
-      <br />
-      Technical SEO specialist
+      Frontend Engineer
     </>
   ),
   paragraph: (
     <>
-      Based out of San Francisco. I enjoy working with early stage startups and
-      small businesses.
+      I make professional websites that are:
       <br />
+      <ul className="list-disc list-inside ml-6">
+        <li>Fast and responsive (on all browsers and mobile devices)</li>
+        <li>Accessible (WCAG 2.1 compliant)</li>
+        <li>Strong technical SEO scores</li>
+        <li>Fast load times and first paint</li>
+      </ul>
       <br />
-      Aside from general development, I can help you get set up with marketing
-      tools, especially with integration and troubleshooting. Have a tracking
-      bug you can&apos;t solve? Contact me for a consultation.
+      Ask about my other services:
+      <ul className="list-disc list-inside ml-6">
+        <li>Ad-tech / mar-tech integrations</li>
+        <li>A/B testing</li>
+        <li>UX audit</li>
+      </ul>
     </>
   ),
   cta: {
     label: 'Github',
-    href: 'https://github.com/stevenjchang/',
+    href: 'http://bit.ly/stevenjchang-github',
   },
   cta2: {
-    label: 'LinkedIn',
+    label: 'Connect',
     href: 'https://bit.ly/stevenjchang-linkedin',
   },
 };
 
 export const SECTION_1 = {
   headingSection: {
-    heading: 'Learn more about me',
+    heading: 'Hire The Best!',
     paragraph: (
       <>
+        Read testimonials on{' '}
+        <a
+          href="https://bit.ly/stevenjchang-linkedin"
+          // className="text-blue-400"
+          style={{
+            // textDecoration: 'underline',
+            fontWeight: '500',
+          }}
+        >
+          LinkedIn
+        </a>
+        <br />
         <br />
         You will find that I&apos;m a uniquely detailed and communicative
         developer.
@@ -82,10 +112,9 @@ export const SECTION_4 = {
   heading: 'My Tech Stack',
   paragraph: (
     <>
-      Tech stack I work with most often
+      This is the technologies I work with most often.
       <br />
       <br />
-      contact me for other technologies you wish to use
     </>
   ),
   items: [
@@ -132,23 +161,28 @@ export const SECTION_4 = {
 };
 
 export const SECTION_5 = {
-  heading: 'heading',
-  paragraph: 'para',
+  heading: 'My Portfolio',
+  paragraph: "My work that's out in the world",
   items: [
     {
-      heading: 'Login Page',
-      imgUrl: '/img/login.jpg',
-      url: '/auth/login',
+      heading: 'Skupos',
+      imgUrl: '/img/projects/skupos.png',
+      url: 'https://www.skupos.com/',
     },
     {
-      heading: 'Profile page',
-      imgUrl: '/img/profile.jpg',
-      url: '/profile',
+      heading: 'Marketing Careers',
+      imgUrl: '/img/projects/marketing-careers.png',
+      url: 'https://bit.ly/marketing-careers',
     },
     {
-      heading: 'Landing Page',
-      imgUrl: '/img/landing.jpg',
-      url: '/landing',
+      heading: 'Global Trends',
+      imgUrl: '/img/projects/global-marketing-trends.png',
+      url: 'https://bit.ly/global-marketing-trends',
+    },
+    {
+      heading: 'NFT Art Marketplace',
+      imgUrl: '/img/projects/legend-art.png',
+      url: 'https://bit.ly/legend-art',
     },
   ],
 };

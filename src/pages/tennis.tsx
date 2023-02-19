@@ -8,55 +8,6 @@ const Section = styled.div`
   margin: 0 auto;
 `;
 
-const PlayerBoxWrapper = styled.div`
-  height: 400px;
-  width: 100%;
-`;
-
-const StyledPlayerBox = styled.div<{ active: boolean }>`
-  height: 100%;
-  width: 10 0%;
-  border: 8px solid ${({ color }) => color};
-  background-color: ${({ active, color }) => (active ? color : 'white')};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: ${({ active }) => (active ? 'white' : 'black')};
-  font-size: 150px;
-  font-weight: 700;
-  opacity: 0.8;
-`;
-
-const PlayerBox = ({ active, children, color }) => {
-  return (
-    <PlayerBoxWrapper>
-      {active && <h1>Serving</h1>}
-
-      <StyledPlayerBox color={color} active={active}>
-        {children}
-      </StyledPlayerBox>
-    </PlayerBoxWrapper>
-  );
-};
-
-const ScoreBoard = () => {
-  return (
-    <div>
-      <h1>scoreboard</h1>
-      <table></table>
-    </div>
-  );
-};
-/*
-0 3 - 1  3/5 0
-3 5 - 2  8/5 1
-5 6 - 1  11/5 2
-
-playerScore1 + playerScore2 / 5, if even = player 1
-                       if odd = player 2
-*/
-
 const cssLeftRight = css`
   display: inline-block;
   width: 50%;
@@ -77,18 +28,17 @@ const cssMinus = css`
   height: 50px;
 `;
 
-enum ScoreActionOptions {
+const TextXl = styled.p`
+  font-size: 110px;
+`;
+
+enum ScoreType {
+  RESET_ALL = 'RESET_ALL',
   decrement = 'decrement',
   increment = 'increment',
 }
 
 type PlayerNum = 'player1' | 'player2';
-
-interface ScoreActionType {
-  // player: 'player1' | 'player2';
-  player: PlayerNum;
-  type: ScoreActionOptions;
-}
 
 interface ScoreState {
   allScore: Array<any>;
@@ -99,6 +49,12 @@ interface ScoreState {
   pointsToPlayTo: number;
   roundsToPlay: number;
   switchServeOn: number;
+}
+interface ScoreActionType {
+  // player: 'player1' | 'player2';
+  initialState?: ScoreState;
+  player?: PlayerNum;
+  type: ScoreType;
 }
 
 const reducer = (state: ScoreState, action: ScoreActionType) => {
@@ -144,16 +100,20 @@ const TennisPage = () => {
   const [score, dispatch] = useReducer(reducer, initialState);
 
   const addPoint = (player: PlayerNum) => {
-    return dispatch({ type: ScoreActionOptions.increment, player });
+    return dispatch({ type: ScoreType.increment, player });
   };
   const minusPoint = (player: PlayerNum) => {
-    return dispatch({ type: ScoreActionOptions.decrement, player });
+    return dispatch({ type: ScoreType.decrement, player });
   };
 
   const firstPlayerIsServing = useMemo(() => {
     const total = score.player1 + score.player2;
     return Math.floor(total / 5) % 2 === 0 ? true : false;
   }, [score.player1, score.player2]);
+
+  const handleNewGame = () => {
+    dispatch({ type: ScoreType.RESET_ALL, initialState });
+  };
 
   return (
     <Section>
@@ -174,7 +134,7 @@ const TennisPage = () => {
       <div className="main">
         <div className="left" css={cssLeftRight}>
           <div className="serve-left" css={cssNowServing}>
-            player 1 serving
+            {firstPlayerIsServing && <TextXl>Serving</TextXl>}
           </div>
           <div
             className="box"
@@ -197,7 +157,7 @@ const TennisPage = () => {
         <div className="right" css={cssLeftRight}>
           <div className="left">
             <div className="serve-left" css={cssNowServing}>
-              player 2 serving
+              {!firstPlayerIsServing && <TextXl>Serving</TextXl>}
             </div>
             <div
               className="box"

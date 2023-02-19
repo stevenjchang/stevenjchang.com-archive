@@ -9,6 +9,11 @@ body {
   /* font-family: 'Inter', sans-serif !important; */
 }
 
+ul,
+ol {
+  list-style: revert;
+}
+
 a {
   color: inherit;
 }
